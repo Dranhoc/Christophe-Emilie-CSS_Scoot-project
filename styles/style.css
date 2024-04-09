@@ -119,4 +119,57 @@ nav .nav__link {
 }
 nav .nav__link nav__btn {
   display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  width: 375px;
+  background-image: url("../assets/footer-background.svg");
+}
+
+.footer__container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333A44;
+  height: 438px;
+  width: 375px;
+  color: white;
+}
+.footer__container2 .scoot-logo {
+  margin-top: 76px;
+  width: 120px;
+}
+.footer__container2 .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: auto;
+}
+.footer__container2 .links a {
+  color: #939CAA;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.footer__container2 .social-medias-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+  margin-bottom: 76px;
 }/*# sourceMappingURL=style.css.map */
