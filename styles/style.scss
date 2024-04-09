@@ -3,3 +3,11 @@
 @import "navBar";
 @import "about";
 @import "footer";
+
+body{
+  font-family: "Space Mono", monospace;
+  
+  a{
+    text-decoration: none;
+  }
+}
