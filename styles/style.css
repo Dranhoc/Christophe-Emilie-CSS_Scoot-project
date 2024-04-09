@@ -63,6 +63,21 @@ li {
   list-style-type: none;
 }
 
+:root {
+  --ff-space: "Space Mono", monospace;
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --primary-clr-yellow: #fcb72b;
+  --primary-clr-navy: #495567;
+  --secondary-clr-dimgrey: #939caa;
+  --secondary-clr-lightgrey: #e5ecf4;
+  --secondary-clr-snow: #f2f5f9;
+  --secondary-clr-lightyellow: #fff4df;
+}
+
+body {
+  font-family: var(--ff-space);
+}
+
 .container {
   padding-inline: 9vw;
 }
@@ -259,11 +274,4 @@ header .header__img {
   position: absolute;
   top: 15rem;
   right: -7rem;
-}
-
-body {
-  font-family: "Space Mono", monospace;
-}
-body a {
-  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
