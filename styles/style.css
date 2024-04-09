@@ -42,4 +42,40 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  width: 375px;
+  background-image: url("../assets/footer-background.svg");
+}
+
+.footer__container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: grey;
+  height: 438px;
+  width: 375px;
+}
+.footer__container2 .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.footer__container2 .social-medias-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
