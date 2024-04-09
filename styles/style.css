@@ -188,24 +188,34 @@ footer {
 
 .footer__container1 {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
   min-width: 100%;
-  background-image: url("../assets/footer-background.svg");
   color: white;
+  background-color: #495567;
   padding-inline: 9vw;
+  background-image: url("../assets/footer-background.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 .footer__container1 h3 {
-  margin-top: 3rem;
+  margin-top: 5.5rem;
   font-size: 32px;
+  line-height: 32px;
   text-align: center;
+  letter-spacing: -2.3px;
+}
+.footer__container1 .flex-logos-appstore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
+  margin-bottom: 5.5rem;
 }
 .footer__container1 .logo-appstore {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
   color: #495567;
   font-weight: 600;
   background-color: #E5ECF4;
@@ -222,8 +232,6 @@ footer {
 }
 .footer__container1 .logo-appstore img {
   color: #495567;
-  width: 17.07px;
-  height: 19.33px;
 }
 
 .footer__container2 {
@@ -247,6 +255,7 @@ footer {
   align-items: center;
   gap: 1rem;
   margin: auto;
+  margin-bottom: 3rem;
 }
 .footer__container2 .links a {
   color: #939CAA;
@@ -264,6 +273,23 @@ footer {
   margin-bottom: 76px;
 }
 
+@media (min-width: 768px) {
+  .footer__container2 {
+    flex-direction: row;
+    padding-block: 2rem;
+  }
+  .footer__container2 .scoot-logo {
+    margin-top: 0px;
+  }
+  .footer__container2 .social-medias-logos {
+    margin-bottom: 0px;
+  }
+  .footer__container2 .links {
+    flex-direction: row;
+    margin-bottom: 0rem;
+    margin-left: 3rem;
+  }
+}
 header {
   background: url("../assets/header-bg.png");
   filter: grayscale(50%);
