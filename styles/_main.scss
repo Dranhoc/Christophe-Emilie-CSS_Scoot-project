@@ -1,3 +1,19 @@
+:root {
+  --ff-space: "Space Mono", monospace;
+  --ff-lexend: "Lexend Deca", sans-serif;
+
+  --primary-clr-yellow: #fcb72b;
+  --primary-clr-navy: #495567;
+
+  --secondary-clr-dimgrey: #939caa;
+  --secondary-clr-lightgrey: #e5ecf4;
+  --secondary-clr-snow: #f2f5f9;
+  --secondary-clr-lightyellow: #fff4df;
+}
+
+body {
+  font-family: var(--ff-space);
+}
 .container {
   padding-inline: 9vw;
 }
