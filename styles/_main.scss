@@ -1,0 +1,22 @@
+.container {
+  padding: 0 5vw;
+}
+
+header {
+  background: url("../assets/header.png");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+  .header__text {
+    h1 {
+      color: #fff;
+    }
+  }
+  .header__img {
+    position: absolute;
+    top: 15rem;
+    right: -7rem;
+  }
+}

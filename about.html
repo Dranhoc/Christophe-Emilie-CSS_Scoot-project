@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="modal"></div>
-      <nav>
-        <button type="button" class="nav__hamburger"></button>
-        <a href="index.html"><img src="assets/logo.svg" alt="logo" /></a>
-        <div class="nav__link-mobile">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="locations.html"></a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div class="modal"></div>
+    <nav class="container">
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger">
+        <img src="assets/hamburger.svg" alt="icon-menu" />
+      </label>
+
+      <a class="nav__logo" href="index.html"
+        ><img src="assets/logo.svg" alt="logo"
+      /></a>
+      <ul class="nav__link">
+        <li><a href="about.html">About</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+      <a class="btn nav__btn" href="#">Get Scootin</a>
+    </nav>
+    <header class="container">
+      <div class="header__text">
+        <h1>About</h1>
+      </div>
+      <div class="header__img">
+        <img src="assets/white-circles.svg" alt="" />
+      </div>
+    </header>
   </body>
 </html>
