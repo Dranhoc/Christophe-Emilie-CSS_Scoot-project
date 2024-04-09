@@ -1,22 +1,14 @@
 .container {
-  padding: 0 5vw;
+  padding-inline: 9vw;
 }
 
-header {
-  background: url("../assets/header.png");
-  background-size: cover;
-  background-position: center;
-
-  position: relative;
-  overflow: hidden;
-  .header__text {
-    h1 {
-      color: #fff;
-    }
-  }
-  .header__img {
-    position: absolute;
-    top: 15rem;
-    right: -7rem;
-  }
+.btn {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
