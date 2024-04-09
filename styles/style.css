@@ -85,7 +85,7 @@ body {
 .btn {
   padding: 0.5rem 2.5rem;
   border: none;
-  background-color: orange;
+  background-color: var(--primary-clr-yellow);
   color: white;
 }
 
@@ -108,8 +108,8 @@ a {
 }
 
 nav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   display: flex;
   align-items: center;
   background: #fff;
@@ -139,6 +139,10 @@ nav .nav__mobile-link .nav__link {
 }
 
 @media screen and (max-width: 760px) {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   nav input[type=checkbox]:checked ~ .nav__mobile-link {
     left: 0;
   }
