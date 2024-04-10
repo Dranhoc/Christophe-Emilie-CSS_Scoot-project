@@ -14,7 +14,7 @@
       }
 
       .beautiful-line{
-        // display:none;
+        display:none;
         position: absolute;
         color:var(--secondary-clr-lightgrey);
         border: 7.5px solid;
@@ -74,7 +74,12 @@
 
   .index__guide__flex{
     display:flex;
+    .hr_container{
       
+      .beautiful-line{
+        display:block;
+      }
+    }
       img{
         margin-left: 1.5rem;
       }

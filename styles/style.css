@@ -402,6 +402,7 @@ header .header__circles {
   align-self: center;
 }
 .index__guide .hr_container .beautiful-line {
+  display: none;
   position: absolute;
   color: var(--secondary-clr-lightgrey);
   border: 7.5px solid;
@@ -442,6 +443,9 @@ header .header__circles {
   }
   .index__guide .index__guide__flex {
     display: flex;
+  }
+  .index__guide .index__guide__flex .hr_container .beautiful-line {
+    display: block;
   }
   .index__guide .index__guide__flex img {
     margin-left: 1.5rem;
