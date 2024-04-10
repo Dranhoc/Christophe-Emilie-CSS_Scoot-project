@@ -210,7 +210,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 260px;
+  width: 270px;
   margin-bottom: 5.5rem;
 }
 .footer__container1 .logo-appstore {
@@ -332,4 +332,9 @@ header .header__circles {
     right: 0;
     top: 2.5rem;
   }
+}
+.index__guide {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: 9vw;
 }/*# sourceMappingURL=style.css.map */
