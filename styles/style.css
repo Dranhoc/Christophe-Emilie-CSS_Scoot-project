@@ -88,6 +88,7 @@ body {
   padding-inline: 9vw;
   max-width: 1440px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 .btn {
@@ -174,6 +175,7 @@ nav label {
 }
 nav .nav__logo img {
   min-width: 3rem;
+  max-width: none;
 }
 nav .nav__mobile-link {
   width: 100%;
@@ -410,31 +412,71 @@ header .header__circles {
   }
 }
 .img-txt {
-  display: grid;
-  padding-inline: 9vw;
   margin-top: 4rem;
+  display: grid;
   gap: 2rem;
+  text-align: center;
+}
+.img-txt .img-txt__img {
+  max-width: 80%;
+  margin-inline: auto;
+  position: relative;
+}
+.img-txt .img-txt__img .circle-shadow {
+  position: absolute;
+  display: none;
+  background-color: var(--secondary-clr-lightgrey);
+}
+.img-txt .img-txt__txt {
+  width: 80%;
+  margin-inline: auto;
+}
+.img-txt .img-txt__txt h2 {
+  margin-bottom: 1rem;
+}
+.img-txt .img-txt__txt p {
   text-align: center;
 }
 
 @media (min-width: 769px) {
   .img-txt {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    align-items: center;
+  }
+  .img-txt .img-txt__img .circle-shadow {
+    display: block;
+    top: 0;
+    right: 35vw;
+    opacity: 0.5;
+  }
+  .img-txt .img-txt__txt {
+    text-align: left;
+    width: 100%;
+  }
+  .img-txt .img-txt__txt p {
+    text-align: left;
+    padding-right: 120px;
   }
 }
 .txt-img {
-  width: 100%;
-  border: 2px solid red;
+  margin-top: 4rem;
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   text-align: center;
 }
 .txt-img .txt-img__img {
-  max-width: 100%;
+  max-width: 80%;
+  margin-inline: auto;
+  position: relative;
 }
 .txt-img .txt-img__img .circle-shadow {
+  position: absolute;
   display: none;
+  background-color: var(--secondary-clr-lightgrey);
+}
+.txt-img .txt-img__txt {
+  width: 80%;
+  margin-inline: auto;
 }
 .txt-img .txt-img__txt h2 {
   margin-bottom: 1rem;
@@ -443,20 +485,6 @@ header .header__circles {
   text-align: center;
 }
 
-@media screen and (min-width: 376px) {
-  .txt-img {
-    position: relative;
-    margin-inline: auto;
-    overflow: hidden;
-  }
-  .txt-img .txt-img__img .circle-shadow {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -27rem;
-    opacity: 0.5;
-  }
-}
 @media screen and (min-width: 769px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
@@ -466,13 +494,18 @@ header .header__circles {
     order: 1;
   }
   .txt-img .txt-img__img .circle-shadow {
-    right: -25rem;
+    display: block;
+    top: 0;
+    right: -35vw;
+    opacity: 0.5;
   }
   .txt-img .txt-img__txt {
     text-align: left;
+    width: 100%;
   }
   .txt-img .txt-img__txt p {
     text-align: left;
+    padding-right: 120px;
   }
 }
 .round {
