@@ -1,0 +1,32 @@
+.img-txt {
+  display: grid;
+  padding-inline: 9vw;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+@media (min-width: 769px) {
+  .img-txt {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+.txt-img {
+  border: 2px solid red;
+  display: grid;
+  padding-inline: 9vw;
+  margin-top: 4rem;
+}
+@media (min-width: 769px) {
+  .txt-img {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    .txt-img__img {
+      order: 1;
+    }
+  }
+}
+.round {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

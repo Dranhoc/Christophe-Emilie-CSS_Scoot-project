@@ -12,7 +12,11 @@
 }
 
 body {
-  font-family: var(--ff-space);
+  font-family: var(--ff-lexend);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--primary-clr-navy);
 }
 .container {
   padding-inline: 9vw;
@@ -23,6 +27,34 @@ body {
   border: none;
   background-color: var(--primary-clr-yellow);
   color: white;
+}
+h1 {
+  font-family: var(--ff-space);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+h2 {
+  font-family: var(--ff-space);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+}
+h3 {
+  font-family: var(--ff-space);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+}
+h4 {
+  font-family: var(--ff-space);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.07px;
 }
 a {
   text-decoration: none;
