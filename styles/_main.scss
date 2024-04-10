@@ -17,9 +17,13 @@ body {
   font-weight: 400;
   line-height: 25px;
   color: var(--primary-clr-navy);
+  max-width: 1440px;
+  margin-inline: auto;
 }
 .container {
   padding-inline: 9vw;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .btn {
