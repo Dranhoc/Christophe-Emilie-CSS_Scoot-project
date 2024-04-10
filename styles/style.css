@@ -291,8 +291,7 @@ footer {
   }
 }
 header {
-  background: url("../assets/header-bg.png");
-  filter: grayscale(50%);
+  background: url("../assets/about-header-bg.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
@@ -304,7 +303,7 @@ header .header__text h1 {
   color: #fff;
   text-align: center;
 }
-header .header__img {
+header .header__circles {
   display: none;
 }
 
@@ -312,7 +311,7 @@ header .header__img {
   header .header__text h1 {
     text-align: left;
   }
-  header .header__img {
+  header .header__circles {
     display: block;
     position: absolute;
     right: 0;

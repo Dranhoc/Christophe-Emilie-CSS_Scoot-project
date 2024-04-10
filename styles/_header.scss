@@ -1,19 +1,19 @@
 header {
-  background: url("../assets/header-bg.png");
-  filter: grayscale(50%);
+  background: url("../assets/about-header-bg.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: relative;
   overflow: hidden;
+
   .header__text {
     h1 {
       color: #fff;
       text-align: center;
     }
   }
-  .header__img {
+  .header__circles {
     display: none;
   }
 }
@@ -25,7 +25,7 @@ header {
         text-align: left;
       }
     }
-    .header__img {
+    .header__circles {
       display: block;
       position: absolute;
       right: 0;
