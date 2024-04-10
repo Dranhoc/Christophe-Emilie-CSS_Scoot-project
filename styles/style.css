@@ -276,9 +276,13 @@ footer {
 }
 .footer__container1 .logo-appstore p {
   font-size: 6.5px;
+  line-height: 12px;
+  font-family: "Space Mono", monospace;
 }
 .footer__container1 .logo-appstore p span {
   font-size: 13.06px;
+  line-height: 15px;
+  font-family: "Space Mono", monospace;
 }
 .footer__container1 .logo-appstore img {
   color: #495567;
@@ -389,6 +393,22 @@ header .header__circles {
   margin-inline: 9vw;
   margin-block: 9vw;
 }
+.index__guide .hr_container {
+  position: relative;
+}
+.index__guide .hr_container img {
+  width: 56px;
+  align-self: center;
+}
+.index__guide .hr_container .beautiful-line {
+  position: absolute;
+  color: var(--secondary-clr-lightgrey);
+  border: 7.5px solid;
+  z-index: -1;
+  top: calc(50% - 7.5px);
+  right: 300px;
+  width: 85vw;
+}
 .index__guide .index__guide__flex {
   display: flex;
   flex-direction: column;
@@ -396,14 +416,6 @@ header .header__circles {
   text-align: center;
   gap: 2rem;
   margin-top: 2rem;
-}
-.index__guide .index__guide__flex img {
-  width: 56px;
-  align-self: center;
-}
-.index__guide .beautiful-line {
-  color: var(--secondary-clr-lightgrey);
-  border: 7.5px solid;
 }
 
 @media (min-width: 768px) {

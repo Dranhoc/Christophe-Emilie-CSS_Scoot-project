@@ -5,6 +5,27 @@
   margin-block:9vw;
   
   
+    .hr_container{
+      position: relative;
+
+      img{
+        width:56px;
+        align-self: center;
+      }
+
+      .beautiful-line{
+        // display:none;
+        position: absolute;
+        color:var(--secondary-clr-lightgrey);
+        border: 7.5px solid;
+        z-index:-1;
+        top:calc(50% - 7.5px);
+        right: 300px;
+        width:85vw;
+      }
+    }
+  
+  
   .index__guide__flex{
     display:flex;
     flex-direction: column;
@@ -13,19 +34,12 @@
     gap:2rem;
     margin-top: 2rem;
 
-    img{
-      width:56px;
-      align-self: center;
-    }
-  }
-
-  .beautiful-line{
-    // display:none;
-    color:var(--secondary-clr-lightgrey);
-    border: 7.5px solid;
 
   }
-}
+
+
+  }
+
 
 @media (min-width: 768px){
 
