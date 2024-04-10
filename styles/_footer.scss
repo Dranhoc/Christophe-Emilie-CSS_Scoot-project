@@ -73,7 +73,7 @@ footer{
 
   .scoot-logo{
     margin-top:76px;
-    width: 120px;
+  
   }
 
   .links{
@@ -87,7 +87,6 @@ footer{
 
     a{
       color:#939CAA;
-      text-transform:uppercase;
       text-decoration: none;
       font-size: 15px;
       font-weight: 700;
@@ -109,9 +108,15 @@ footer{
   .footer__container2{
     flex-direction: row;
     padding-block:2rem;
+    gap:0rem;
+    
 
     .scoot-logo{
       margin-top:0px;
+      // min-width: 3rem;
+      img{
+        min-width:3rem;
+      }
     }
 
     .social-medias-logos{
@@ -121,7 +126,8 @@ footer{
     .links{
       flex-direction: row;
       margin-bottom:0rem;
-      margin-left: 3rem;
+      margin-left: 2rem;
+      
     }
   }
 }
