@@ -3,6 +3,7 @@
   padding-inline: 9vw;
   margin-top: 4rem;
   gap: 2rem;
+  text-align: center;
 }
 @media (min-width: 769px) {
   .img-txt {
@@ -15,13 +16,30 @@
   display: grid;
   padding-inline: 9vw;
   margin-top: 4rem;
+  gap: 2rem;
+  text-align: center;
+  .txt-img__img {
+    .circle-shadow {
+      display: none;
+    }
+  }
+  .txt-img__txt {
+  }
 }
 @media (min-width: 769px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    position: relative;
     .txt-img__img {
+      padding: 2rem;
       order: 1;
+      .circle-shadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -20rem;
+      }
     }
   }
 }
