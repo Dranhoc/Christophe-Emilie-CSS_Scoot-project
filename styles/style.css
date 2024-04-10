@@ -233,7 +233,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 260px;
+  width: 270px;
   margin-bottom: 5.5rem;
 }
 .footer__container1 .logo-appstore {
@@ -269,7 +269,6 @@ footer {
 }
 .footer__container2 .scoot-logo {
   margin-top: 76px;
-  width: 120px;
 }
 .footer__container2 .links {
   display: flex;
@@ -282,7 +281,6 @@ footer {
 }
 .footer__container2 .links a {
   color: #939CAA;
-  text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
@@ -300,9 +298,13 @@ footer {
   .footer__container2 {
     flex-direction: row;
     padding-block: 2rem;
+    gap: 0rem;
   }
   .footer__container2 .scoot-logo {
     margin-top: 0px;
+  }
+  .footer__container2 .scoot-logo img {
+    min-width: 3rem;
   }
   .footer__container2 .social-medias-logos {
     margin-bottom: 0px;
@@ -310,7 +312,7 @@ footer {
   .footer__container2 .links {
     flex-direction: row;
     margin-bottom: 0rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 }
 @media (min-width: 1440px) {
@@ -354,6 +356,12 @@ header .header__circles {
     top: 2.5rem;
   }
 }
+.index__guide {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: 9vw;
+}
+
 .img-txt {
   display: grid;
   padding-inline: 9vw;
