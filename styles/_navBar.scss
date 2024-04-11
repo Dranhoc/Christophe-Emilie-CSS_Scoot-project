@@ -37,10 +37,6 @@ nav {
     padding-bottom: 1rem;
     input[type="checkbox"]:checked ~ .nav__mobile-link {
       left: 0;
-      .nav__btn {
-        width: 100%;
-        text-align: center;
-      }
     }
     label {
       display: block;

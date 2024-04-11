@@ -28,10 +28,14 @@ body {
 }
 
 .btn {
-  padding: 0.5rem 2.5rem;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-clr-yellow);
   color: white;
+  width: 180px;
+  height: 53px;
 }
 h1 {
   font-family: var(--ff-space);
