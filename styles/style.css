@@ -949,7 +949,7 @@ button {
   width: 180px;
   min-width: 180px;
   height: 53px;
-  background-color: rgb(252, 183, 43);
+  background-color: var(--primary-clr-yellow);
 }
 .location__container .location__messageUs__container a {
   color: white;
@@ -991,22 +991,22 @@ button {
     gap: 6rem;
     width: 100%;
   }
-  .location__messageUs__container .messageUs-button__container {
+  .location__container .location__messageUs__container .messageUs-button__container {
     margin-block: auto;
   }
-  .location__messageUs__container h3 {
+  .location__container .location__messageUs__container h3 {
     margin-top: 0;
     margin-inline: 0vw;
     text-align: left;
-    min-width: 17vw;
+    min-width: 18rem;
   }
-  .location__messageUs__container p {
+  .location__container .location__messageUs__container p {
     margin-top: 0;
     margin-inline: 0vw;
     text-align: left;
   }
 }
-@media (max-width: 1439px) {
+@media (min-width: 1440px) and (max-width: 1439px) {
   .messageUs-button__container {
     margin-block: 5vh;
   }

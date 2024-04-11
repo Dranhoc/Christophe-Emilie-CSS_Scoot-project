@@ -44,7 +44,7 @@
       width:180px;
       min-width:180px;
       height:53px;
-      background-color:rgba(252, 183, 43, 1);
+      background-color:var(--primary-clr-yellow);
     }
 
     a {
@@ -105,7 +105,7 @@
       margin-top:0;
       margin-inline:0vw;
       text-align: left;
-      min-width:17vw;
+      min-width:18rem;
     }
 
     p{
@@ -121,5 +121,5 @@
   .messageUs-button__container{
     margin-block:5vh;
   }
-
+}
 }
