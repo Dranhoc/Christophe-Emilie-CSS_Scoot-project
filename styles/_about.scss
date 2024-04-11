@@ -1,20 +1,49 @@
 .faq {
   text-align: center;
   margin-bottom: 5rem;
+  border: 3px solid blue;
   h2 {
     margin-bottom: 10px;
   }
-  .howItWorks,
-  .safeDriving {
+  .howItWorks {
     h3 {
       margin-bottom: 20px;
     }
     details {
+      summary {
+        font-family: var(--ff-space);
+        padding: 1.5rem;
+        font-size: 18px;
+        font-weight: bold;
+
+        list-style: none;
+        display: flex;
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background: url("../assets/arrow-faq.png");
+          background-size: cover;
+          margin-left: 0.75rem;
+          transition: 0.5s;
+        }
+        &::-webkit-details-marker {
+          display: none;
+        }
+      }
+      p {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        margin-top: 10px;
+        transition: 1000ms;
+      }
       margin-bottom: 20px;
       background-color: var(--secondary-clr-lightgrey);
       text-align: left;
       &[open] summary ~ * {
         animation: sweep 500ms ease-in-out;
+      }
+      &[open] > summary::after {
+        transform: rotate(180deg);
       }
       @keyframes sweep {
         0% {
@@ -25,21 +54,6 @@
           opacity: 1;
           transform: translateY(0);
         }
-      }
-
-      summary {
-        font-family: var(--ff-space);
-        padding: 1.5rem;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        &::after {
-        }
-      }
-      p {
-        padding: 0 1.5rem 1.5rem 1.5rem;
-        margin-top: 10px;
-        transition: 1000ms;
       }
     }
   }
