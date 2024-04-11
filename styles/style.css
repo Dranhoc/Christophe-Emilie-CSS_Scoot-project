@@ -589,7 +589,7 @@ header .header__circles {
 .index-header .index-header__txt {
   color: white;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0 6rem 0;
 }
 .index-header .index-header__txt h1 {
   margin-bottom: 1rem;
@@ -626,7 +626,7 @@ header .header__circles {
   text-align: center;
 }
 .img-txt .img-txt__img {
-  max-width: 80%;
+  max-width: 100%;
   margin-inline: auto;
   position: relative;
 }
@@ -895,7 +895,7 @@ header .header__circles {
 }
 .txt-img-btn2 {
   margin-top: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   display: grid;
   gap: 3rem;
   text-align: center;
