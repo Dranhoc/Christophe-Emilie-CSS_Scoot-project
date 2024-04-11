@@ -1,5 +1,4 @@
 header {
-  background: url("../assets/about-header-bg.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
@@ -32,4 +31,11 @@ header {
       top: 2.5rem;
     }
   }
+}
+.about {
+  background: url("../assets/about-header-bg.jpg");
+}
+
+.careers {
+  background: url("../assets/careers-header-bg.jpg");
 }

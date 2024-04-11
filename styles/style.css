@@ -135,7 +135,7 @@ a {
   color: black;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 15px;
     line-height: 25px;
@@ -361,7 +361,6 @@ footer {
   }
 }
 header {
-  background: url("../assets/about-header-bg.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
@@ -388,6 +387,14 @@ header .header__circles {
     top: 2.5rem;
   }
 }
+.about {
+  background: url("../assets/about-header-bg.jpg");
+}
+
+.careers {
+  background: url("../assets/careers-header-bg.jpg");
+}
+
 .index__guide {
   display: grid;
   grid-template-columns: 1fr;
@@ -451,6 +458,12 @@ header .header__circles {
     margin-left: 1.5rem;
   }
 }
+.round {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .img-txt {
   margin-top: 4rem;
   display: grid;
@@ -524,7 +537,7 @@ header .header__circles {
   background-color: var(--secondary-clr-lightgrey);
 }
 .txt-img .txt-img__txt {
-  width: 80%;
+  width: 100%;
   margin-inline: auto;
 }
 .txt-img .txt-img__txt h2 {
@@ -559,12 +572,6 @@ header .header__circles {
     padding-right: 120px;
   }
 }
-.round {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
 .img-img-img {
   text-align: center;
 }
