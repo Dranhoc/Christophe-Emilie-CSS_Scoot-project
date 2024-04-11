@@ -1,1 +1,49 @@
+.apply__container__container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  margin-block:10vh;
+  
+  .apply__container{
+    display:flex;
+    flex-direction: column;
+    gap : 0.5rem;
+    background-color: var(--secondary-clr-lightgrey);
+    padding-block:1.5rem;
+    
+  }
 
+  .apply_btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:247px;
+    height:53px;
+    background-color: var(--primary-clr-yellow);
+    margin-inline:auto;
+    color:white;
+  }
+}
+
+@media (min-width:768px){
+
+  .apply__container__container{
+    text-align: left;
+    
+    .apply__container{
+      display:grid;
+      grid-auto-flow: column;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 2rem 2rem;
+      padding-inline:3rem;
+    }
+
+    .apply_btn{
+      grid-row: span 2;
+      align-self: center;
+      width:180px;
+      
+    }
+  }
+}

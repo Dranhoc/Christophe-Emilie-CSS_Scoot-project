@@ -36,6 +36,7 @@
   }
 
   .location__messageUs__container {
+    
     .messageUs-button__container {
       display: flex;
       justify-content: center;
@@ -45,8 +46,9 @@
       min-width:180px;
       height:53px;
       background-color:var(--primary-clr-yellow);
+      margin-block:5vh;
     }
-
+   
     a {
       color: white;
     }
@@ -67,6 +69,8 @@
     }
 
     .location__messageUs__container {
+     
+
       h3 {
         margin-inline: 30vw;
       }
@@ -83,6 +87,7 @@
     display: flex;
     flex-direction: column;
     margin-inline:9vw;
+
     .map{
       width:1110px;
       height:543px;
