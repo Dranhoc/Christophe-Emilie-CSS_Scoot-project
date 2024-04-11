@@ -33,8 +33,6 @@
         color:var(--secondary-clr-lightgrey);
         border: 7.5px solid;
         z-index:-1;
-        top:calc(50% - 7.5px);
-        right: 80%;
         width:85vw;
     }
 }
@@ -54,13 +52,13 @@
     .hr_container{
       justify-content: left;
       width:100px;
+
       .beautiful-line{
         display:block;
         transform-origin: 100%;
         transform: rotate(90deg) ;
-        right:1;
-        
-      
+        right:53.5px;
+  
       }
     }
     .guide__flex__lastP{
@@ -96,8 +94,18 @@
       
       .beautiful-line{
         display:block;
+        top:calc(50% - 7.5px);
+        right: 80%;
+        transform-origin: 50% ;
+        transform: rotate(-180deg);
       }
     }
+
+    .guide__flex__lastP{
+      grid-column:2;
+      margin-top: 0px;
+   }
+
     .index__guide__img{
         margin-left: 1.2rem;
       }

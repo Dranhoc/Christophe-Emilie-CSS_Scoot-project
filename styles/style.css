@@ -428,8 +428,6 @@ header .header__circles {
   color: var(--secondary-clr-lightgrey);
   border: 7.5px solid;
   z-index: -1;
-  top: calc(50% - 7.5px);
-  right: 80%;
   width: 85vw;
 }
 
@@ -448,7 +446,7 @@ header .header__circles {
     display: block;
     transform-origin: 100%;
     transform: rotate(90deg);
-    right: 1;
+    right: 53.5px;
   }
   .index__guide .index__guide__flex .guide__flex__lastP {
     grid-column: 2;
@@ -476,6 +474,14 @@ header .header__circles {
   }
   .index__guide .index__guide__flex .hr_container .beautiful-line {
     display: block;
+    top: calc(50% - 7.5px);
+    right: 80%;
+    transform-origin: 50%;
+    transform: rotate(-180deg);
+  }
+  .index__guide .index__guide__flex .guide__flex__lastP {
+    grid-column: 2;
+    margin-top: 0px;
   }
   .index__guide .index__guide__flex .index__guide__img {
     margin-left: 1.2rem;
