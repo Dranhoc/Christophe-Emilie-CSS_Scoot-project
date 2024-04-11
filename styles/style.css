@@ -889,4 +889,52 @@ button {
 .location__container p {
   margin-top: 5vh;
   margin-inline: 3vh;
+}
+.location__container .location__messageUs__container .messageUs-button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-block: 5vh;
+  width: 180px;
+  height: 53px;
+  background-color: rgb(252, 183, 43);
+}
+.location__container .location__messageUs__container a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .location__container .location__cities__container {
+    display: none;
+  }
+  .location__container .map {
+    height: 337px;
+    width: 689px;
+    background: url("../assets/img-location/map-tablet.png");
+    background-repeat: no-repeat;
+  }
+  .location__messageUs__container h3 {
+    margin-inline: 30vw;
+  }
+  .location__messageUs__container p {
+    margin-inline: 9vw;
+  }
+}
+@media (min-width: 1440px) {
+  .location__container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 9vh;
+  }
+  .location__container .map {
+    height: 543px;
+    width: 1110px;
+    background: url("../assets/img-location/map-desktop.png");
+    background-repeat: no-repeat;
+  }
+  .location__messageUs__container {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
