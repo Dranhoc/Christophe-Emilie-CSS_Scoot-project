@@ -356,6 +356,7 @@ footer {
   }
   .footer__container1 h2 {
     margin-block: 2rem;
+    text-align: left;
   }
   .footer__container1 .logo-appstore {
     margin-block: 5rem;
@@ -864,7 +865,7 @@ button {
 }
 .location__container .map {
   margin-inline: auto;
-  margin-block: 5vh;
+  margin-block: 10vh;
   height: 152px;
   width: 311px;
   background: url("../assets/img-location/map-mobile.png");
@@ -895,8 +896,8 @@ button {
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  margin-block: 5vh;
   width: 180px;
+  min-width: 180px;
   height: 53px;
   background-color: rgb(252, 183, 43);
 }
@@ -925,16 +926,38 @@ button {
   .location__container {
     display: flex;
     flex-direction: column;
-    margin-inline: 9vh;
+    margin-inline: 9vw;
   }
   .location__container .map {
-    height: 543px;
     width: 1110px;
+    height: 543px;
     background: url("../assets/img-location/map-desktop.png");
     background-repeat: no-repeat;
   }
   .location__messageUs__container {
     display: flex;
     flex-direction: row;
+    margin-block: 10vh;
+    gap: 6rem;
+    width: 100%;
+  }
+  .location__messageUs__container .messageUs-button__container {
+    margin-block: auto;
+  }
+  .location__messageUs__container h3 {
+    margin-top: 0;
+    margin-inline: 0vw;
+    text-align: left;
+    min-width: 17vw;
+  }
+  .location__messageUs__container p {
+    margin-top: 0;
+    margin-inline: 0vw;
+    text-align: left;
+  }
+}
+@media (max-width: 1439px) {
+  .messageUs-button__container {
+    margin-block: 5vh;
   }
 }/*# sourceMappingURL=style.css.map */
