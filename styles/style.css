@@ -751,4 +751,36 @@ header .header__circles {
     text-align: left;
     padding-right: 120px;
   }
+}
+.location__container {
+  display: grid;
+  text-align: center;
+}
+.location__container .map {
+  margin-inline: auto;
+  margin-block: 5vh;
+  height: 152px;
+  width: 311px;
+  background: url("../assets/img-location/map-mobile.png");
+  background-repeat: no-repeat;
+}
+.location__container .location__cities__container {
+  display: grid;
+  grid-template-rows: 72px 72px 72px 72px;
+  gap: 1rem;
+}
+.location__container .location__cities__container .location__city {
+  margin-inline: auto;
+  width: 311px;
+  height: 100%;
+  background-color: rgba(252, 183, 43, 0.15);
+  padding-block: 20px;
+}
+.location__container h3 {
+  margin-top: 5vh;
+  margin-inline: 12vh;
+}
+.location__container p {
+  margin-top: 5vh;
+  margin-inline: 3vh;
 }/*# sourceMappingURL=style.css.map */
