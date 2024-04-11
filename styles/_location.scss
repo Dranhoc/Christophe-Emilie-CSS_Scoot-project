@@ -35,7 +35,25 @@
 
   p{
     margin-top: 5vh;
-    margin-inline:3vh;
-    
+    margin-inline:3vh;  
+  }
+
+  .location__messageUs__container{
+    .messageUs-button__container{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline:auto;
+      margin-block:5vh;
+      width:180px;
+      height:53px;
+      background-color:rgba(252, 183, 43, 1);
+
+    }
+    a{
+      color:white;
+      // margin-block: auto;
+      
+    }
   }
 }
