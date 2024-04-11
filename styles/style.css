@@ -401,30 +401,34 @@ header .header__circles {
   margin-inline: 9vw;
   margin-block: 9vw;
 }
-.index__guide .hr_container {
-  position: relative;
-}
-.index__guide .hr_container img {
+
+.index__guide__img {
   width: 56px;
   align-self: center;
 }
-.index__guide .hr_container .beautiful-line {
-  display: none;
-  position: absolute;
-  color: var(--secondary-clr-lightgrey);
-  border: 7.5px solid;
-  z-index: -1;
-  top: calc(50% - 7.5px);
-  right: 300px;
-  width: 85vw;
-}
-.index__guide .index__guide__flex {
+
+.index__guide__flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+.index__guide__flex .hr_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.index__guide__flex .beautiful-line {
+  display: none;
+  position: absolute;
+  color: var(--secondary-clr-lightgrey);
+  border: 7.5px solid;
+  z-index: -1;
+  top: calc(50% - 7.5px);
+  right: 80%;
+  width: 85vw;
 }
 
 @media (min-width: 768px) {
@@ -434,10 +438,23 @@ header .header__circles {
     grid-template-rows: 1fr 3fr;
     text-align: left;
   }
-  .index__guide .index__guide__flex img {
+  .index__guide .index__guide__flex .hr_container {
+    justify-content: left;
+    width: 100px;
+  }
+  .index__guide .index__guide__flex .hr_container .beautiful-line {
+    display: block;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    right: 1;
+  }
+  .index__guide .index__guide__flex .guide__flex__lastP {
+    grid-column: 2;
+    margin-top: -56px;
+  }
+  .index__guide .index__guide__flex .index__guide__img {
     grid-row: 1/-1;
     align-self: start;
-    margin-left: 3.7rem;
     width: 96px;
   }
   .index__guide .index__guide__flex p, .index__guide .index__guide__flex h4 {
@@ -450,12 +467,16 @@ header .header__circles {
   }
   .index__guide .index__guide__flex {
     display: flex;
+    margin-left: -1rem;
+  }
+  .index__guide .index__guide__flex .hr_container {
+    justify-content: left;
   }
   .index__guide .index__guide__flex .hr_container .beautiful-line {
     display: block;
   }
-  .index__guide .index__guide__flex img {
-    margin-left: 1.5rem;
+  .index__guide .index__guide__flex .index__guide__img {
+    margin-left: 1.2rem;
   }
 }
 .round {
