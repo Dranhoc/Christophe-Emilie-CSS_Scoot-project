@@ -30,7 +30,7 @@
     }
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
   .img-txt {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1440px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -130,7 +130,7 @@
     .img-img-img__section {
       margin-top: 3rem;
       .img-img-img__section__img {
-        max-width: 240px;
+        width: 240px;
         margin-inline: auto;
         position: relative;
         .img-img-img__section__num {
@@ -157,7 +157,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .img-img-img {
     .img-img-img__main {
       display: flex;

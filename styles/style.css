@@ -132,7 +132,11 @@ h4 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-clr-dimgrey);
+  font-family: var(--ff-space);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -189,7 +193,7 @@ nav .nav__mobile-link .nav__link {
   gap: 1.2rem;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -250,10 +254,8 @@ footer {
   background-position: right bottom;
   background-repeat: no-repeat;
 }
-.footer__container1 h3 {
+.footer__container1 h2 {
   margin-top: 5.5rem;
-  font-size: 32px;
-  line-height: 32px;
   text-align: center;
   letter-spacing: -2.3px;
 }
@@ -269,7 +271,7 @@ footer {
   align-content: center;
   color: #495567;
   font-weight: 600;
-  background-color: #E5ECF4;
+  background-color: #e5ecf4;
   border-radius: 5px;
   gap: 1rem;
   padding-inline: 0.7rem;
@@ -293,7 +295,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #333A44;
+  background-color: #333a44;
   padding-inline: 9vw;
   min-width: 100%;
   gap: 3rem;
@@ -312,7 +314,7 @@ footer {
   margin-bottom: 3rem;
 }
 .footer__container2 .links a {
-  color: #939CAA;
+  color: #939caa;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
@@ -352,7 +354,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer__container1 h3 {
+  .footer__container1 h2 {
     margin-block: 2rem;
   }
   .footer__container1 .logo-appstore {
@@ -376,7 +378,7 @@ header .header__circles {
   display: none;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   header .header__text h1 {
     text-align: left;
   }
@@ -512,7 +514,7 @@ header .header__circles {
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
   .img-txt {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -568,7 +570,7 @@ header .header__circles {
   text-align: center;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1440px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -607,7 +609,7 @@ header .header__circles {
   margin-top: 3rem;
 }
 .img-img-img .img-img-img__main .img-img-img__section .img-img-img__section__img {
-  max-width: 240px;
+  width: 240px;
   margin-inline: auto;
   position: relative;
 }
@@ -631,7 +633,7 @@ header .header__circles {
   max-width: 457px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .img-img-img .img-img-img__main {
     display: flex;
     flex-direction: row;
