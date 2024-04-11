@@ -139,7 +139,7 @@ a {
   line-height: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 15px;
     line-height: 25px;
@@ -504,13 +504,21 @@ header .header__circles {
   margin-inline: auto;
   position: relative;
 }
+.img-txt .img-txt__img::before {
+  content: url("../assets/arrow-lrd-big.svg");
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+}
 .img-txt .img-txt__img .circle-shadow {
   position: absolute;
   display: none;
   background-color: var(--secondary-clr-lightgrey);
 }
 .img-txt .img-txt__txt {
-  width: 80%;
+  width: 100%;
   margin-inline: auto;
 }
 .img-txt .img-txt__txt h2 {
@@ -520,6 +528,21 @@ header .header__circles {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .img-txt .img-txt__img::before {
+    content: url("../assets/arrow-lrd-big.svg");
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 250px;
+  }
+  .img-txt .img-txt__img .circle-shadow {
+    display: block;
+    top: 0;
+    right: 500px;
+    opacity: 0.5;
+  }
+}
 @media (min-width: 1440px) {
   .img-txt {
     grid-template-columns: 1fr 1fr;
@@ -529,12 +552,6 @@ header .header__circles {
   .img-txt .img-txt__img {
     justify-self: start;
     margin-inline: 0;
-  }
-  .img-txt .img-txt__img .circle-shadow {
-    display: block;
-    top: 0;
-    right: 35vw;
-    opacity: 0.5;
   }
   .img-txt .img-txt__txt {
     text-align: left;
@@ -556,9 +573,17 @@ header .header__circles {
   text-align: center;
 }
 .txt-img .txt-img__img {
-  max-width: 80%;
+  max-width: 100%;
   margin-inline: auto;
   position: relative;
+}
+.txt-img .txt-img__img::before {
+  content: url("../assets/arrow-rld-big.svg");
+  position: absolute;
+  display: block;
+  top: 130px;
+  left: 0px;
+  z-index: 3;
 }
 .txt-img .txt-img__img .circle-shadow {
   position: absolute;
@@ -576,6 +601,21 @@ header .header__circles {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .txt-img .txt-img__img::before {
+    content: url("../assets/arrow-rld-big.svg");
+    position: absolute;
+    display: block;
+    top: 270px;
+    left: -120px;
+  }
+  .txt-img .txt-img__img .circle-shadow {
+    display: block;
+    top: 0;
+    left: 500px;
+    opacity: 0.5;
+  }
+}
 @media screen and (min-width: 1440px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
@@ -585,12 +625,6 @@ header .header__circles {
     justify-self: end;
     margin-inline: 0;
     order: 1;
-  }
-  .txt-img .txt-img__img .circle-shadow {
-    display: block;
-    top: 0;
-    right: -35vw;
-    opacity: 0.5;
   }
   .txt-img .txt-img__txt {
     text-align: left;
@@ -629,7 +663,7 @@ header .header__circles {
   background-color: var(--primary-clr-yellow);
   position: absolute;
   top: 200px;
-  right: 80px;
+  right: 75px;
   font-family: var(--ff-space);
   font-size: 24px;
 }
@@ -645,6 +679,76 @@ header .header__circles {
     flex-direction: row;
   }
 }
-button {
+.txt-img-btn {
+  margin-top: 4rem;
+  display: grid;
+  gap: 3rem;
+  text-align: center;
+}
+.txt-img-btn .txt-img-btn__img {
+  max-width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+.txt-img-btn .txt-img-btn__img::before {
+  content: url("../assets/arrow-rld-big.svg");
+  position: absolute;
+  display: block;
+  top: 130px;
+  left: 0px;
+  z-index: 3;
+}
+.txt-img-btn .txt-img-btn__img .circle-shadow {
+  position: absolute;
+  display: none;
+  background-color: var(--secondary-clr-lightgrey);
+}
+.txt-img-btn .txt-img-btn__txt {
+  width: 100%;
+  margin-inline: auto;
+}
+.txt-img-btn .txt-img-btn__txt h2 {
+  margin-bottom: 1rem;
+}
+.txt-img-btn .txt-img-btn__txt p {
+  text-align: center;
+}
+.txt-img-btn .txt-img-btn__txt button {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .txt-img-btn .txt-img-btn__img::before {
+    content: url("../assets/arrow-rld-big.svg");
+    position: absolute;
+    display: block;
+    transform: rotateX(180deg);
+    top: 270px;
+    left: -120px;
+  }
+  .txt-img-btn .txt-img-btn__img .circle-shadow {
+    display: block;
+    top: 0;
+    left: 500px;
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .txt-img-btn {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .txt-img-btn .txt-img-btn__img {
+    justify-self: end;
+    margin-inline: 0;
+    order: 1;
+  }
+  .txt-img-btn .txt-img-btn__txt {
+    text-align: left;
+    width: 100%;
+  }
+  .txt-img-btn .txt-img-btn__txt p {
+    text-align: left;
+    padding-right: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -13,6 +13,14 @@
     max-width: 80%;
     margin-inline: auto;
     position: relative;
+    &::before {
+      content: url("../assets/arrow-lrd-big.svg");
+      position: absolute;
+      display: block;
+      top: 0px;
+      right: 0px;
+      z-index: 3;
+    }
     .circle-shadow {
       position: absolute;
       display: none;
@@ -20,13 +28,32 @@
     }
   }
   .img-txt__txt {
-    width: 80%;
+    width: 100%;
     margin-inline: auto;
     h2 {
       margin-bottom: 1rem;
     }
     p {
       text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-txt {
+    .img-txt__img {
+      &::before {
+        content: url("../assets/arrow-lrd-big.svg");
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 250px;
+      }
+      .circle-shadow {
+        display: block;
+        top: 0;
+        right: 500px;
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -39,12 +66,6 @@
     .img-txt__img {
       justify-self: start;
       margin-inline: 0;
-      .circle-shadow {
-        display: block;
-        top: 0;
-        right: 35vw;
-        opacity: 0.5;
-      }
     }
     .img-txt__txt {
       text-align: left;
@@ -69,9 +90,17 @@
   text-align: center;
 
   .txt-img__img {
-    max-width: 80%;
+    max-width: 100%;
     margin-inline: auto;
     position: relative;
+    &::before {
+      content: url("../assets/arrow-rld-big.svg");
+      position: absolute;
+      display: block;
+      top: 130px;
+      left: 0px;
+      z-index: 3;
+    }
     .circle-shadow {
       position: absolute;
       display: none;
@@ -90,7 +119,25 @@
     }
   }
 }
-
+@media screen and (min-width: 768px) {
+  .txt-img {
+    .txt-img__img {
+      &::before {
+        content: url("../assets/arrow-rld-big.svg");
+        position: absolute;
+        display: block;
+        top: 270px;
+        left: -120px;
+      }
+      .circle-shadow {
+        display: block;
+        top: 0;
+        left: 500px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
 @media screen and (min-width: 1440px) {
   .txt-img {
     grid-template-columns: 1fr 1fr;
@@ -100,12 +147,6 @@
       justify-self: end;
       margin-inline: 0;
       order: 1;
-      .circle-shadow {
-        display: block;
-        top: 0;
-        right: -35vw;
-        opacity: 0.5;
-      }
     }
 
     .txt-img__txt {
@@ -143,7 +184,7 @@
           background-color: var(--primary-clr-yellow);
           position: absolute;
           top: 200px;
-          right: 80px;
+          right: 75px;
           font-family: var(--ff-space);
           font-size: 24px;
         }
@@ -162,6 +203,87 @@
     .img-img-img__main {
       display: flex;
       flex-direction: row;
+    }
+  }
+}
+
+.txt-img-btn {
+  margin-top: 4rem;
+  display: grid;
+  gap: 3rem;
+  text-align: center;
+
+  .txt-img-btn__img {
+    max-width: 100%;
+    margin-inline: auto;
+    position: relative;
+    &::before {
+      content: url("../assets/arrow-rld-big.svg");
+      position: absolute;
+      display: block;
+      top: 130px;
+      left: 0px;
+      z-index: 3;
+    }
+    .circle-shadow {
+      position: absolute;
+      display: none;
+      background-color: var(--secondary-clr-lightgrey);
+    }
+  }
+
+  .txt-img-btn__txt {
+    width: 100%;
+    margin-inline: auto;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      margin-top: 3rem;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .txt-img-btn {
+    .txt-img-btn__img {
+      &::before {
+        content: url("../assets/arrow-rld-big.svg");
+        position: absolute;
+        display: block;
+        transform: rotateX(180deg);
+        top: 270px;
+        left: -120px;
+      }
+      .circle-shadow {
+        display: block;
+        top: 0;
+        left: 500px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .txt-img-btn {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .txt-img-btn__img {
+      justify-self: end;
+      margin-inline: 0;
+      order: 1;
+    }
+
+    .txt-img-btn__txt {
+      text-align: left;
+      width: 100%;
+      p {
+        text-align: left;
+        padding-right: 120px;
+      }
     }
   }
 }
