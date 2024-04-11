@@ -235,6 +235,52 @@ nav .nav__mobile-link .nav__link {
     padding: 0;
   }
 }
+.faq {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.faq h2 {
+  margin-bottom: 10px;
+}
+.faq .howItWorks h3,
+.faq .safeDriving h3 {
+  margin-bottom: 20px;
+}
+.faq .howItWorks details,
+.faq .safeDriving details {
+  margin-bottom: 20px;
+  background-color: var(--secondary-clr-lightgrey);
+  text-align: left;
+}
+.faq .howItWorks details[open] summary ~ *,
+.faq .safeDriving details[open] summary ~ * {
+  animation: sweep 500ms ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.faq .howItWorks details summary,
+.faq .safeDriving details summary {
+  font-family: var(--ff-space);
+  padding: 1.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq .howItWorks details p,
+.faq .safeDriving details p {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  margin-top: 10px;
+  transition: 1000ms;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -669,6 +715,7 @@ button {
 }
 .img-img-img {
   text-align: center;
+  margin-bottom: 5rem;
 }
 .img-img-img h3 {
   margin-top: 4rem;
@@ -703,6 +750,9 @@ button {
   margin-inline: auto;
   margin-top: 80px;
   max-width: 457px;
+}
+.img-img-img .img-img-img__main .img-img-img__section .img-img-img__section__txt h4 {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -904,7 +954,7 @@ button {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .location__container .location__cities__container {
     display: none;
   }
@@ -914,10 +964,10 @@ button {
     background: url("../assets/img-location/map-tablet.png");
     background-repeat: no-repeat;
   }
-  .location__messageUs__container h3 {
+  .location__container .location__messageUs__container h3 {
     margin-inline: 30vw;
   }
-  .location__messageUs__container p {
+  .location__container .location__messageUs__container p {
     margin-inline: 9vw;
   }
 }
@@ -933,7 +983,7 @@ button {
     background: url("../assets/img-location/map-desktop.png");
     background-repeat: no-repeat;
   }
-  .location__messageUs__container {
+  .location__container .location__messageUs__container {
     display: flex;
     flex-direction: row;
   }
