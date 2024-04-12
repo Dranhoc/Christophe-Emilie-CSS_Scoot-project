@@ -57,7 +57,7 @@ nav {
       top: 3rem;
       width: 80%;
       height: calc(100vh - 3rem);
-      background-color: hsla(233, 8%, 79%, 0.9);
+      background-color: var(--primary-clr-navy);
       transition: 0.5s;
       z-index: 1;
       padding: 2rem;

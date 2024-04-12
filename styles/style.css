@@ -224,7 +224,7 @@ nav .nav__mobile-link .nav__link {
     top: 3rem;
     width: 80%;
     height: calc(100vh - 3rem);
-    background-color: hsla(233, 8%, 79%, 0.9);
+    background-color: var(--primary-clr-navy);
     transition: 0.5s;
     z-index: 1;
     padding: 2rem;
@@ -584,7 +584,6 @@ header .header__circles {
   background-image: url("../assets/img-index/index-header-bg.jpg");
   background-size: cover;
   background-position: right;
-  z-index: -1;
 }
 .index-header .index-header__txt {
   color: white;
