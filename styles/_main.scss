@@ -26,6 +26,7 @@ body {
   padding-inline: 9vw;
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -37,10 +38,9 @@ body {
   color: white;
   width: 180px;
   height: 53px;
-
 }
 
-.btn:hover{
+.btn:hover {
   color: var(--primary-clr-yellow);
   background-color: white;
   border: 2px solid var(--primary-clr-yellow);
@@ -108,10 +108,5 @@ a {
 @media (min-width: 2500px) {
   .container {
     padding-inline: 9%;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    // overflow: visible;
   }
 }

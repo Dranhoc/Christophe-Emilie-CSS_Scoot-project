@@ -89,6 +89,7 @@ body {
   padding-inline: 9vw;
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -183,7 +184,6 @@ nav {
   align-items: center;
   background: #fff;
   position: relative;
-  transition: 1000ms;
   z-index: 1000;
 }
 nav input[type=checkbox] {
@@ -239,7 +239,7 @@ nav .nav__mobile-link .nav__link a:hover {
     align-items: flex-start;
     gap: 2em;
     top: 3rem;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     background-color: var(--primary-clr-navy);
     transition: 0.5s;
@@ -252,7 +252,7 @@ nav .nav__mobile-link .nav__link a:hover {
     padding: 0;
   }
 }
-nav.visible {
+nav.visiable {
   position: sticky;
   width: 100%;
   top: 0;
@@ -551,6 +551,7 @@ header .header__circles {
   text-align: center;
   gap: 2rem;
   margin-top: 2rem;
+  max-height: 200px;
 }
 .index__guide__flex .hr_container {
   position: relative;
