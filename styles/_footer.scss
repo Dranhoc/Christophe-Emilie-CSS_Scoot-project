@@ -99,6 +99,14 @@ footer {
     justify-content: space-between;
     width: 120px;
     margin-bottom: 76px;
+
+    img{
+      filter: invert(71%) sepia(48%) saturate(733%) hue-rotate(347deg) brightness(103%) contrast(98%);
+    }
+
+    img:hover{
+      filter: invert(96%) sepia(2%) saturate(1058%) hue-rotate(176deg) brightness(98%) contrast(95%);
+    }
     
   }
 }
@@ -119,13 +127,6 @@ footer {
     .social-medias-logos {
       margin-bottom: 0px;
 
-      img{
-        filter: invert(71%) sepia(48%) saturate(733%) hue-rotate(347deg) brightness(103%) contrast(98%);
-      }
-
-      img:hover{
-        filter: invert(96%) sepia(2%) saturate(1058%) hue-rotate(176deg) brightness(98%) contrast(95%);
-      }
     }
 
     .links {
