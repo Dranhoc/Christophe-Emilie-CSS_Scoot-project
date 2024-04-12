@@ -239,7 +239,7 @@ nav .nav__mobile-link .nav__link a:hover {
     align-items: flex-start;
     gap: 2em;
     top: 3rem;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     background-color: var(--primary-clr-navy);
     transition: 0.5s;
@@ -252,7 +252,7 @@ nav .nav__mobile-link .nav__link a:hover {
     padding: 0;
   }
 }
-nav.visiable {
+nav.visible {
   position: sticky;
   width: 100%;
   top: 0;
