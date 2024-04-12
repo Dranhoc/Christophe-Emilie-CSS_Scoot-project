@@ -63,6 +63,10 @@
     }
   }
 }
+summary:hover{
+  background-color: var(--secondary-clr-lightyellow);
+}
+
 @media screen and (min-width: 1440px) {
   .faq {
     h2 {

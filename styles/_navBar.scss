@@ -1,6 +1,6 @@
 nav {
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
   align-items: center;
   background: #fff;
@@ -27,6 +27,9 @@ nav {
       display: flex;
       list-style: none;
       gap: 1.2rem;
+      a:hover{
+        color:var(--primary-clr-yellow);
+      }
     }
   }
 }

@@ -25,6 +25,11 @@
     color:white;
   }
 }
+.apply_btn:hover{
+  color: var(--primary-clr-yellow);
+  background-color: white;
+  border: 2px solid var(--primary-clr-yellow);
+}
 
 @media (min-width:768px){
 
