@@ -165,6 +165,11 @@ a {
     line-height: 24px;
   }
 }
+@media (min-width: 2500px) {
+  .container {
+    padding-inline: 9%;
+  }
+}
 nav {
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -454,6 +459,14 @@ footer {
     margin-bottom: 0rem;
   }
 }
+@media (min-width: 2500px) {
+  .footer__container1 {
+    padding-inline: 9%;
+  }
+  .footer__container2 {
+    padding-inline: 9%;
+  }
+}
 header {
   background-size: cover;
   background-position: center;
@@ -493,7 +506,8 @@ header .header__circles {
   display: grid;
   grid-template-columns: 1fr;
   margin-inline: 9vw;
-  margin-block: 9vw;
+  margin-top: 7vh;
+  margin-bottom: 12vh;
 }
 
 .index__guide__img {
@@ -519,8 +533,8 @@ header .header__circles {
   position: absolute;
   color: var(--secondary-clr-lightgrey);
   border: 7.5px solid;
-  z-index: -1;
-  width: 85vw;
+  z-index: -2;
+  width: 185vw;
 }
 
 @media (min-width: 768px) {
@@ -552,6 +566,7 @@ header .header__circles {
   .index__guide .index__guide__flex p,
   .index__guide .index__guide__flex h4 {
     margin-inline: 3vh;
+    max-height: 5rem;
   }
 }
 @media (min-width: 1440px) {
@@ -611,6 +626,11 @@ header .header__circles {
   }
   .index-header .index-header__txt .index-header__txt__main a {
     margin-inline: 0;
+  }
+}
+@media (min-width: 2500px) {
+  .index__guide {
+    margin-inline: 9%;
   }
 }
 .round {
@@ -1016,6 +1036,7 @@ header .header__circles {
 .location__container {
   display: grid;
   text-align: center;
+  margin-inline: auto;
 }
 .location__container .map {
   margin-inline: auto;
@@ -1027,11 +1048,11 @@ header .header__circles {
 }
 .location__container .location__cities__container {
   display: grid;
+  margin-inline: auto;
   grid-template-rows: 72px 72px 72px 72px;
   gap: 1rem;
 }
 .location__container .location__cities__container .location__city {
-  margin-inline: auto;
   width: 311px;
   height: 100%;
   background-color: rgba(252, 183, 43, 0.15);
@@ -1039,11 +1060,11 @@ header .header__circles {
 }
 .location__container h3 {
   margin-top: 5vh;
-  margin-inline: 12vh;
+  margin-inline: 37vw;
 }
 .location__container p {
   margin-top: 5vh;
-  margin-inline: 3vh;
+  margin-inline: 3vw;
 }
 .location__container .location__messageUs__container .messageUs-button__container {
   display: flex;
@@ -1092,7 +1113,7 @@ header .header__circles {
   .location__container .location__messageUs__container {
     display: flex;
     flex-direction: row;
-    margin-block: 10vh;
+    margin-block: 8%;
     gap: 6rem;
     width: 100%;
   }
@@ -1114,5 +1135,10 @@ header .header__circles {
 @media (min-width: 1440px) and (max-width: 1439px) {
   .messageUs-button__container {
     margin-block: 5vh;
+  }
+}
+@media (min-width: 2500px) {
+  .location__container {
+    margin-inline: 9%;
   }
 }/*# sourceMappingURL=style.css.map */

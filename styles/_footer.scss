@@ -140,3 +140,12 @@ footer {
     }
   }
 }
+
+@media (min-width:2500px){
+  .footer__container1{
+    padding-inline: 9%;
+  }
+  .footer__container2{
+    padding-inline:9%;
+  }
+}
