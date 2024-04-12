@@ -19,12 +19,12 @@ body {
   color: var(--primary-clr-navy);
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 .container {
   padding-inline: 9vw;
   max-width: 1440px;
   margin-inline: auto;
-  overflow: hidden;
 }
 
 .btn {
@@ -96,8 +96,13 @@ a {
   }
 }
 
-@media (min-width:2500px){
+@media (min-width: 2500px) {
   .container {
     padding-inline: 9%;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    // overflow: visible;
   }
 }
