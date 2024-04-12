@@ -1,6 +1,7 @@
 .location__container {
   display: grid;
   text-align: center;
+  margin-inline: auto;
 
   .map{
     margin-inline:auto;
@@ -13,11 +14,11 @@
 
   .location__cities__container {
     display: grid;
+    margin-inline:auto;
     grid-template-rows: 72px 72px 72px 72px;
     gap: 1rem;
 
     .location__city {
-      margin-inline: auto;
       width: 311px;
       height: 100%;
       background-color: rgba(252, 183, 43, 0.15);
@@ -27,12 +28,12 @@
 
   h3 {
     margin-top: 5vh;
-    margin-inline: 12vh;
+    margin-inline: 37vw;
   }
 
   p {
     margin-top: 5vh;
-    margin-inline: 3vh;
+    margin-inline: 3vw;
   }
 
   .location__messageUs__container {
@@ -57,6 +58,7 @@
 
 @media screen and (min-width: 768px) {
   .location__container {
+
     .location__cities__container {
       display: none;
     }
@@ -70,7 +72,6 @@
 
     .location__messageUs__container {
      
-
       h3 {
         margin-inline: 30vw;
       }
@@ -98,7 +99,7 @@
   .location__messageUs__container{
     display: flex;
     flex-direction: row;
-    margin-block:10vh;
+    margin-block:8%;
     gap:6rem;
     width:100%;
 
@@ -126,5 +127,12 @@
   .messageUs-button__container{
     margin-block:5vh;
   }
+}
+}
+
+@media (min-width:2500px){
+  .location__container {
+    margin-inline: 9%;
+    
 }
 }
