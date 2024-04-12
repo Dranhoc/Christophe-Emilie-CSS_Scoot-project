@@ -1,25 +1,30 @@
-var lastScrollTop; // This Varibale will store the top position
+var lastScrollTop; // 
 
-var navbar = document.querySelector("nav"); // Get The NavBar
+var navbar = document.querySelector("nav"); // 
 
 window.addEventListener("scroll", function () {
-    //on every scroll this funtion will be called
+    
 
     var scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-    //This line will get the location on scroll
+         document.documentElement.scrollTop;
+    
 
     if (scrollTop < lastScrollTop) {
-        //if it will be greater than the previous
-        if (!navbar.classList.contains("visiable")) {
-            navbar.classList.add("visiable");
+        
+        if (!navbar.classList.contains("visible")) {
+            navbar.classList.add("visible");
         }
-        //set the value to the negetive of height of navbar
+        
     } else {
-        if (navbar.classList.contains("visiable")) {
-            navbar.classList.remove("visiable");
+        if (navbar.classList.contains("visible")) {
+            navbar.classList.remove("visible");
         }
     }
 
-    lastScrollTop = scrollTop; //New Position Stored
+    lastScrollTop = scrollTop; 
 });
+
+
+
+
+ 
