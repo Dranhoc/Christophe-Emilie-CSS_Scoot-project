@@ -165,9 +165,6 @@
           .arrow-header {
             right: 360px;
             bottom: 0px;
-            .hl1 {
-              width: 330px;
-            }
           }
         }
       }
@@ -214,6 +211,9 @@
             position: absolute;
             bottom: 125px;
             right: -600px;
+            .hl1 {
+              width: 330px;
+            }
           }
           .hl1-header {
             display: block;

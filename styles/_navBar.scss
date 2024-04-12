@@ -4,7 +4,9 @@ nav {
   display: flex;
   align-items: center;
   background: #fff;
-
+  position: relative;
+  transition: 1000ms;
+  z-index: 1000;
   input[type="checkbox"] {
     appearance: none;
     --web-appearance: none;
@@ -27,8 +29,8 @@ nav {
       display: flex;
       list-style: none;
       gap: 1.2rem;
-      a:hover{
-        color:var(--primary-clr-yellow);
+      a:hover {
+        color: var(--primary-clr-yellow);
       }
     }
   }
@@ -41,6 +43,7 @@ nav {
     input[type="checkbox"]:checked ~ .nav__mobile-link {
       left: 0;
     }
+
     label {
       display: block;
     }
@@ -58,11 +61,11 @@ nav {
       align-items: flex-start;
       gap: 2em;
       top: 3rem;
-      width: 80%;
-      height: calc(100vh - 3rem);
+      width: 100%;
+      height: 100vh;
       background-color: var(--primary-clr-navy);
       transition: 0.5s;
-      z-index: 1;
+      z-index: 3;
       padding: 2rem;
       .nav__link {
         flex-direction: column;
@@ -71,4 +74,10 @@ nav {
       }
     }
   }
+}
+
+nav.visiable {
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
