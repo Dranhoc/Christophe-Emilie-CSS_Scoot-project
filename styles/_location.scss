@@ -6,8 +6,8 @@
   .map {
     margin-inline: auto;
     margin-block: 10%;
-    // height: 152px;
-    // width: 311px;
+    height: 152px;
+    width: 311px;
     background: url("../assets/img-location/map-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,13 +28,13 @@
   }
 
   h3 {
-    margin-top: 5vh;
+    margin-top: 3rem;
     // margin-inline: 37vw;
   }
 
   p {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     margin-inline: 3vw;
   }
 
