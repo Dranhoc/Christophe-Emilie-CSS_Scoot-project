@@ -1,30 +1,25 @@
-var lastScrollTop; // 
 
-var navbar = document.querySelector("nav"); // 
+// Sélectionnez la navbar
+const navbar = document.getElementById('myNav');
 
-window.addEventListener("scroll", function () {
-    
+// Initialisez une variable pour stocker la position de défilement précédente
+let prevScrollPos = window.pageYOffset;
 
-    var scrollTop =
-         document.documentElement.scrollTop;
-    
+window.addEventListener('scroll', () => {
+    // Obtenez la position de défilement actuelle
+    const currentScrollPos = window.pageYOffset;
 
-    if (scrollTop < lastScrollTop) {
-        
-        if (!navbar.classList.contains("visible")) {
-            navbar.classList.add("visible");
-        }
-        
+    // Si l'utilisateur défile vers le haut, ajoutez la classe 'sticky'
+    if (prevScrollPos > currentScrollPos) {
+        navbar.classList.add('sticky');
     } else {
-        if (navbar.classList.contains("visible")) {
-            navbar.classList.remove("visible");
-        }
+        // Sinon, retirez la classe 'sticky'
+        navbar.classList.remove('sticky');
     }
 
-    lastScrollTop = scrollTop; 
+    // Mettez à jour la position de défilement précédente
+    prevScrollPos = currentScrollPos;
 });
 
 
 
-
- 

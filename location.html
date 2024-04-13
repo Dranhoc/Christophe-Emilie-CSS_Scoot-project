@@ -14,88 +14,98 @@
   </head>
 
   <body>
-    <nav class="container">
-      <input type="checkbox" id="hamburger" />
-      <label for="hamburger">
-        <img src="assets/hamburger.svg" alt="icon-menu" />
-      </label>
+    <nav id="myNav">
+      <div class="container-nav">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <img src="assets/hamburger.svg" alt="icon-menu" />
+        </label>
 
-      <a class="nav__logo" href="index.html"
-        ><img src="assets/logo.svg" alt="logo"
-      /></a>
-      <div class="nav__mobile-link">
-        <ul class="nav__link">
-          <li><a href="about.html">About</a></li>
-          <li><a href="location.html">Location</a></li>
-          <li><a href="careers.html">Careers</a></li>
-        </ul>
-        <a class="btn nav__btn" href="#">Get Scootin</a>
+        <a class="nav__logo" href="index.html"
+          ><img src="assets/logo.svg" alt="logo"
+        /></a>
+        <div class="nav__mobile-link">
+          <ul class="nav__link">
+            <li><a href="about.html">About</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+          <a class="btn nav__btn" href="#">Get Scootin</a>
+        </div>
       </div>
     </nav>
-
-    <header class="container careers">
-      <div class="header__text">
-        <h1>Locations</h1>
-      </div>
-      <div class="header__circles">
-        <img src="assets/white-circles.svg" alt="white-circles" />
-      </div>
-    </header>
-
-    <main class="location__container">
-      <div class="map"></div>
-      <div class="location__cities__container">
-        <h4 class="location__city">New York</h4>
-        <h4 class="location__city">London</h4>
-        <h4 class="location__city">Jakarta</h4>
-        <h4 class="location__city">Yokohama</h4>
-      </div>
-      <div class="location__messageUs__container">
-        <h3>Your City Not Listed?</h3>
-        <p>
-          If you’d like to see Scoot in your hometown, be sure to let us know.
-          We track requests and plan launches based on demand. Feel free to
-          message us by clicking the link or messaging us on social.
-        </p>
-        <div class="messageUs-button__container">
-          <a href="#">Message Us</a>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer__container1">
-        <h2>Sign up and Scoot<br />off today</h2>
-        <div class="flex-logos-appstore">
-          <a href="#" class="logo-appstore">
-            <img src="./assets/apple.svg" alt="appstore logo" />
-            <p>Available on the <br /><span>AppStore</span></p>
-          </a>
-          <a href="#" class="logo-appstore">
-            <img src="./assets/google.svg" alt="playstore logo" />
-            <p>Get it on <br /><span>GooglePlay</span></p>
-          </a>
+    <div class="wrapper">
+      <div class="wrapper careers">
+        <header class="container">
+          <div class="header__text">
+            <h1>Locations</h1>
+          </div>
+        </header>
+        <div class="header__circles">
+          <img src="assets/white-circles.svg" alt="white-circles" />
         </div>
       </div>
 
-      <div class="footer__container2">
-        <div class="scoot-logo">
-          <a href="index.html"
-            ><img src="./assets/scoot-footer.png" alt="Scoot logo"
-          /></a>
+      <main class="location__container">
+        <div class="map"></div>
+        <div class="location__cities__container">
+          <h4 class="location__city">New York</h4>
+          <h4 class="location__city">London</h4>
+          <h4 class="location__city">Jakarta</h4>
+          <h4 class="location__city">Yokohama</h4>
         </div>
-        <div class="links">
-          <a href="about.html">About</a>
-          <a href="location.html">Location</a>
-          <a href="careers.html">Careers</a>
+        <div class="location__messageUs__container">
+          <h3>Your City Not Listed?</h3>
+          <p>
+            If you’d like to see Scoot in your hometown, be sure to let us know.
+            We track requests and plan launches based on demand. Feel free to
+            message us by clicking the link or messaging us on social.
+          </p>
+          <div class="messageUs-button__container">
+            <a href="#">Message Us</a>
+          </div>
         </div>
-        <div class="social-medias-logos">
-          <img src="./assets/logos-footer/facebook.svg" alt="facebook" />
-          <img src="./assets/logos-footer/twitter.svg" alt="twitter" />
-          <img src="./assets/logos-footer/instagram.svg" alt="instagram" />
+      </main>
+
+      <footer>
+        <div class="footer__container1">
+          <div class="container-inside-footer1">
+            <h2>Sign up and Scoot<br />off today</h2>
+            <div class="flex-logos-appstore">
+              <a href="#" class="logo-appstore">
+                <img src="./assets/apple.svg" alt="appstore logo" />
+                <p>Available on the <br /><span>AppStore</span></p>
+              </a>
+              <a href="#" class="logo-appstore">
+                <img src="./assets/google.svg" alt="playstore logo" />
+                <p>Get it on <br /><span>GooglePlay</span></p>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+
+        <div class="footer__container2">
+          <div class="container-inside-footer2">
+            <div class="scoot-logo">
+              <a href="index.html"
+                ><img src="./assets/scoot-footer.png" alt="Scoot logo"
+              /></a>
+            </div>
+            <div class="links">
+              <a href="about.html">About</a>
+              <a href="location.html">Location</a>
+              <a href="careers.html">Careers</a>
+            </div>
+            <div class="social-medias-logos">
+              <img src="./assets/logos-footer/facebook.svg" alt="facebook" />
+              <img src="./assets/logos-footer/twitter.svg" alt="twitter" />
+              <img src="./assets/logos-footer/instagram.svg" alt="instagram" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
