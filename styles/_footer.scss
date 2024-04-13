@@ -167,9 +167,13 @@ footer {
 
 @media (min-width: 2500px) {
   .footer__container1 {
-    padding-inline: 9%;
+    .container-inside-footer1 {
+      padding-inline: 2vw;
+    }
   }
   .footer__container2 {
-    padding-inline: 9%;
+    .container-inside-footer2 {
+      padding-inline: 2vw;
+    }
   }
 }
