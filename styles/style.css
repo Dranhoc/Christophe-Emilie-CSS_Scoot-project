@@ -647,19 +647,20 @@ header .header__text h1 {
   }
   .index__guide .index__guide__flex p,
   .index__guide .index__guide__flex h4 {
-    margin-inline: 3vh;
+    margin-inline: 2rem;
     max-height: 5rem;
   }
 }
 @media (min-width: 1440px) {
   .index__guide {
     display: flex;
-    min-height: 20rem;
-    margin-top: 10rem;
+    margin-block: 10rem;
+  }
+  .index__guide .index__guide__flex_first {
+    margin-left: -2rem;
   }
   .index__guide .index__guide__flex {
     display: flex;
-    margin-left: -1rem;
   }
   .index__guide .index__guide__flex .hr_container {
     justify-content: left;
@@ -1313,7 +1314,7 @@ header .header__text h1 {
   min-width: 180px;
   height: 53px;
   background-color: var(--primary-clr-yellow);
-  margin-bottom: 5vh;
+  margin-bottom: 5%;
 }
 .location__container .location__messageUs__container a {
   color: white;
@@ -1357,7 +1358,7 @@ header .header__text h1 {
   .location__container .location__messageUs__container {
     display: flex;
     flex-direction: row;
-    margin-block: 8%;
+    margin-bottom: 8%;
     gap: 6rem;
     width: 100%;
     padding-inline: 9vw;

@@ -68,7 +68,7 @@
 
       p,
       h4 {
-        margin-inline: 3vh;
+        margin-inline: 2rem;
         max-height: 5rem;
       }
     }
@@ -78,13 +78,15 @@
 @media (min-width: 1440px) {
   .index__guide {
     display: flex;
-    min-height: 20rem;
-    margin-top: 10rem;
+    margin-block: 10rem;
 
+    .index__guide__flex_first{
+        margin-left:-2rem;
+    
+    }
     .index__guide__flex {
       display: flex;
-      margin-left: -1rem;
-
+ 
       .hr_container {
         justify-content: left;
 
