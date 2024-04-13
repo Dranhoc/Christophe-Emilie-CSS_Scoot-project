@@ -136,6 +136,7 @@
       a {
         margin-inline: auto;
         position: relative;
+        
         .arrow-header {
           transform: rotateY(180deg);
           right: 280px;
@@ -145,6 +146,7 @@
             width: 180vw;
           }
         }
+        
         .hl1-header {
           display: none;
         }
