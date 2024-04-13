@@ -1,11 +1,10 @@
 nav {
   margin-inline: auto;
   background: #fff;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100vw;
   z-index: 1000;
-  transition: 0.5s top;
 
   .container-nav {
     padding-inline: 9vw;
@@ -68,6 +67,14 @@ nav {
 //     transform: translateY(-100%);
 //   }
 // }
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s top;
+  }
+}
 
 @media screen and (max-width: 767px) {
   nav {
