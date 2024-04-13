@@ -433,6 +433,7 @@
 
 .arrow-header {
   position: absolute;
+  pointer-events: none;
 
   .hl1 {
     background-color: var(--primary-clr-yellow);

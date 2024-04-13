@@ -692,6 +692,7 @@ header .header__text h1 {
   text-align: center;
   padding: 2rem 0 6rem 0;
   position: relative;
+  max-width: 500px;
 }
 .header-index-wrapper .index-header .index-header__txt h1 {
   margin-bottom: 1rem;
@@ -703,16 +704,16 @@ header .header__text h1 {
   margin-inline: auto;
   position: relative;
 }
-.header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .arrow-header {
+.header-index-wrapper .index-header .index-header__txt .index-header__txt__main .arrow-header {
   transform: rotateY(180deg);
-  right: 280px;
-  bottom: 10px;
+  right: 350px;
+  bottom: 90px;
   z-index: 1;
 }
-.header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .arrow-header .hl1 {
+.header-index-wrapper .index-header .index-header__txt .index-header__txt__main .arrow-header .hl1 {
   width: 180vw;
 }
-.header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .hl1-header {
+.header-index-wrapper .index-header .index-header__txt .index-header__txt__main .hl1-header {
   display: none;
 }
 .header-index-wrapper .index-header__circles {
@@ -726,9 +727,9 @@ header .header__text h1 {
   .header-index-wrapper .index-header::before {
     left: -150px;
   }
-  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .arrow-header {
-    right: 360px;
-    bottom: 0px;
+  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main .arrow-header {
+    right: 450px;
+    bottom: 80px;
   }
   .header-index-wrapper .index-header__circles {
     display: block;
@@ -748,7 +749,6 @@ header .header__text h1 {
   .header-index-wrapper .index-header .index-header__txt {
     width: 50%;
     text-align: left;
-    padding-right: 6rem;
     z-index: 1;
   }
   .header-index-wrapper .index-header .index-header__txt .index-header__txt__main {
@@ -758,20 +758,20 @@ header .header__text h1 {
   .header-index-wrapper .index-header .index-header__txt .index-header__txt__main a {
     margin-inline: 0;
   }
-  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .arrow-header {
+  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main .arrow-header {
     display: block;
     position: absolute;
-    bottom: 125px;
-    right: -600px;
+    bottom: 225px;
+    right: -400px;
   }
-  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .arrow-header .hl1 {
+  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main .arrow-header .hl1 {
     width: 330px;
   }
-  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main a .hl1-header {
+  .header-index-wrapper .index-header .index-header__txt .index-header__txt__main .hl1-header {
     display: block;
     position: absolute;
-    bottom: 125px;
-    right: 230px;
+    bottom: 225px;
+    right: 470px;
   }
   .header-index-wrapper .index-header__circles {
     display: block;
@@ -1161,6 +1161,7 @@ header .header__text h1 {
 
 .arrow-header {
   position: absolute;
+  pointer-events: none;
 }
 .arrow-header .hl1 {
   background-color: var(--primary-clr-yellow);
