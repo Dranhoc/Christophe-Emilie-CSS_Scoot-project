@@ -120,6 +120,7 @@
       text-align: center;
       padding: 2rem 0 6rem 0;
       position: relative;
+      max-width: 500px;
       h1 {
         margin-bottom: 1rem;
       }
@@ -131,18 +132,18 @@
         a {
           margin-inline: auto;
           position: relative;
-          .arrow-header {
-            transform: rotateY(180deg);
-            right: 280px;
-            bottom: 10px;
-            z-index: 1;
-            .hl1 {
-              width: 180vw;
-            }
+        }
+        .arrow-header {
+          transform: rotateY(180deg);
+          right: 350px;
+          bottom: 90px;
+          z-index: 1;
+          .hl1 {
+            width: 180vw;
           }
-          .hl1-header {
-            display: none;
-          }
+        }
+        .hl1-header {
+          display: none;
         }
       }
     }
@@ -162,10 +163,10 @@
       .index-header__txt {
         .index-header__txt__main {
           a {
-            .arrow-header {
-              right: 360px;
-              bottom: 0px;
-            }
+          }
+          .arrow-header {
+            right: 450px;
+            bottom: 80px;
           }
         }
       }
@@ -191,7 +192,6 @@
       .index-header__txt {
         width: 50%;
         text-align: left;
-        padding-right: 6rem;
 
         z-index: 1;
         .index-header__txt__main {
@@ -200,21 +200,21 @@
 
           a {
             margin-inline: 0;
-            .arrow-header {
-              display: block;
-              position: absolute;
-              bottom: 125px;
-              right: -600px;
-              .hl1 {
-                width: 330px;
-              }
+          }
+          .arrow-header {
+            display: block;
+            position: absolute;
+            bottom: 225px;
+            right: -400px;
+            .hl1 {
+              width: 330px;
             }
-            .hl1-header {
-              display: block;
-              position: absolute;
-              bottom: 125px;
-              right: 230px;
-            }
+          }
+          .hl1-header {
+            display: block;
+            position: absolute;
+            bottom: 225px;
+            right: 470px;
           }
         }
       }
