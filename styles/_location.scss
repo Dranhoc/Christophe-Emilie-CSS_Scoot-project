@@ -3,7 +3,6 @@
   text-align: center;
   margin-inline: auto;
   max-width: 1440px;
-  padding-inline: 9vw;
   .map {
     margin-inline: auto;
     margin-block: 10%;
@@ -30,15 +29,17 @@
 
   h3 {
     margin-top: 5vh;
-    margin-inline: 37vw;
+    // margin-inline: 37vw;
   }
 
   p {
     margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-inline: 3vw;
   }
 
   .location__messageUs__container {
+    padding-inline: 9vw;
     .messageUs-button__container {
       display: flex;
       justify-content: center;
@@ -48,7 +49,7 @@
       min-width: 180px;
       height: 53px;
       background-color: var(--primary-clr-yellow);
-      margin-block: 5vh;
+      margin-bottom: 5vh;
     }
 
     a {

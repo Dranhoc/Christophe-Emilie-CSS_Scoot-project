@@ -1271,7 +1271,6 @@ header .header__text h1 {
   text-align: center;
   margin-inline: auto;
   max-width: 1440px;
-  padding-inline: 9vw;
 }
 .location__container .map {
   margin-inline: auto;
@@ -1294,11 +1293,14 @@ header .header__text h1 {
 }
 .location__container h3 {
   margin-top: 5vh;
-  margin-inline: 37vw;
 }
 .location__container p {
   margin-top: 5vh;
+  margin-bottom: 5vh;
   margin-inline: 3vw;
+}
+.location__container .location__messageUs__container {
+  padding-inline: 9vw;
 }
 .location__container .location__messageUs__container .messageUs-button__container {
   display: flex;
@@ -1309,7 +1311,7 @@ header .header__text h1 {
   min-width: 180px;
   height: 53px;
   background-color: var(--primary-clr-yellow);
-  margin-block: 5vh;
+  margin-bottom: 5vh;
 }
 .location__container .location__messageUs__container a {
   color: white;
