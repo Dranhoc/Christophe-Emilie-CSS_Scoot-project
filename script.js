@@ -1,27 +1,38 @@
 
-// Sélectionnez la navbar
-const navbar = document.getElementById('myNav');
+// // Sélectionnez la navbar
+// const navbar = document.getElementById('myNav');
 
-// Initialisez une variable pour stocker la position de défilement précédente
-let prevScrollPos = window.scrollY;
+// // Initialisez une variable pour stocker la position de défilement précédente
+// let prevScrollPos = window.scrollY;
 
-window.addEventListener('scroll', () => {
-    // Obtenez la position de défilement actuelle
-    const currentScrollPos = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     // Obtenez la position de défilement actuelle
+//     const currentScrollPos = window.scrollY;
 
-    // Si l'utilisateur défile vers le haut, ajoutez la classe 'sticky'
-    if (prevScrollPos > currentScrollPos) {
-        navbar.classList.add('sticky');
-        navbar.classList.remove('hidden');
+//     // Si l'utilisateur défile vers le haut, ajoutez la classe 'sticky'
+//     if (prevScrollPos > currentScrollPos) {
+//         navbar.classList.add('sticky');
+//         navbar.classList.remove('hidden');
+//     } else {
+//         // Sinon, retirez la classe 'sticky'
+//         navbar.classList.remove('sticky');
+//         navbar.classList.add('hidden');
+//     }
+
+//     // Mettez à jour la position de défilement précédente
+//     prevScrollPos = currentScrollPos;
+// });
+
+
+
+var lastScrollTop = 0;
+navbar = document.getElementById("myNav");
+window.addEventListener("scroll", function () {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-100px";
     } else {
-        // Sinon, retirez la classe 'sticky'
-        navbar.classList.remove('sticky');
-        navbar.classList.add('hidden');
+        navbar.style.top = "0";
     }
-
-    // Mettez à jour la position de défilement précédente
-    prevScrollPos = currentScrollPos;
+    lastScrollTop = scrollTop;
 });
-
-
-

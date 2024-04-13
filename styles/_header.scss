@@ -17,15 +17,13 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-
     .header__text {
-
       h1 {
         text-align: left;
       }
     }
   }
-  
+
   .header__circles {
     display: block;
     position: absolute;
@@ -39,6 +37,7 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 0;
 }
 
 .careers {
@@ -46,4 +45,5 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 0;
 }

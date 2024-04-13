@@ -68,7 +68,7 @@ li {
   --ff-lexend: "Lexend Deca", sans-serif;
   --primary-clr-yellow: #fcb72b;
   --primary-clr-navy: #495567;
-  --primary-drk-navy:#333A44;
+  --primary-drk-navy: #333a44;
   --secondary-clr-dimgrey: #939caa;
   --secondary-clr-lightgrey: #e5ecf4;
   --secondary-clr-snow: #f2f5f9;
@@ -88,8 +88,14 @@ body {
   max-width: 100vw;
   margin-inline: auto;
   overflow-x: hidden;
+  margin-top: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-top: 93px;
+  }
+}
 .container {
   padding-inline: 9vw;
   max-width: 1440px;
@@ -184,8 +190,11 @@ a {
 nav {
   margin-inline: auto;
   background: #fff;
-  position: inherit;
+  position: fixed;
+  top: 0;
   width: 100vw;
+  z-index: 1000;
+  transition: 0.5s top;
 }
 nav .container-nav {
   padding-inline: 9vw;
@@ -230,18 +239,6 @@ nav .container-nav .nav__mobile-link .nav__link a:hover {
   color: var(--primary-clr-yellow);
 }
 
-@media screen and (min-width: 768px) {
-  #myNav {
-    top: 0;
-    transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
-    opacity: 1;
-    transform: translateY(0);
-  }
-  #myNav.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
 @media screen and (max-width: 767px) {
   nav .container-nav {
     padding-top: 1rem;
@@ -589,6 +586,7 @@ header .header__text h1 {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 0;
 }
 
 .careers {
@@ -596,6 +594,7 @@ header .header__text h1 {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 0;
 }
 
 .index__guide {
