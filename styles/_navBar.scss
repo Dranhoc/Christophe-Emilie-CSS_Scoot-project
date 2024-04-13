@@ -55,16 +55,18 @@ nav {
   }
 }
 
+@media screen and (min-width: 768px){
 
-#myNav {
-  top: 0;
-  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
-  opacity: 1;
-  transform: translateY(0);
-}
-#myNav.hidden {
-opacity: 0;
-transform: translateY(-100%);
+  #myNav {
+    top: 0;
+    transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #myNav.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  }
 }
 
 
@@ -135,7 +137,7 @@ transform: translateY(-100%);
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 9999; 
+  z-index: 19999; 
 }
 
 @media screen and (min-width: 2500px) {
