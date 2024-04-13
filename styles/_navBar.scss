@@ -67,11 +67,11 @@ nav {
 //     transform: translateY(-100%);
 //   }
 // }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   nav {
     position: fixed;
     top: 0;
-    left: 0;
+
     transition: 0.5s top;
   }
 }
