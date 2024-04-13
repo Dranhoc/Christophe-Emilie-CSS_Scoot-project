@@ -2,7 +2,6 @@ nav {
   margin-inline: auto;
   background: #fff;
   position: inherit;
-
   width: 100vw;
 
   .container-nav {
@@ -14,13 +13,16 @@ nav {
     align-items: center;
     max-width: 1440px;
     margin-inline: auto;
+
     input[type="checkbox"] {
       appearance: none;
       --web-appearance: none;
     }
+
     label {
       display: none;
     }
+
     .nav__logo {
       img {
         min-width: 3rem;
@@ -52,6 +54,19 @@ nav {
     }
   }
 }
+
+
+#myNav {
+  top: 0;
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+#myNav.hidden {
+opacity: 0;
+transform: translateY(-100%);
+}
+
 
 @media screen and (max-width: 767px) {
   nav {
@@ -119,10 +134,8 @@ nav {
 .sticky {
   position: sticky;
   top: 0;
-
   width: 100%;
-
-  z-index: 1000; /* Assurez-vous que la navbar est au-dessus des autres éléments */
+  z-index: 9999; 
 }
 
 @media screen and (min-width: 2500px) {
