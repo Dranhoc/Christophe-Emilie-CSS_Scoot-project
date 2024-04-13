@@ -5,6 +5,7 @@ nav {
   top: 0;
   width: 100vw;
   z-index: 1000;
+  transition: 0.5s top;
 
   .container-nav {
     padding-inline: 9vw;
