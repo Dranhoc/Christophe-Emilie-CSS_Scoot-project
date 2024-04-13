@@ -1,36 +1,48 @@
 nav {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  display: flex;
-  align-items: center;
+  margin-inline: auto;
   background: #fff;
   position: relative;
-  // transition: 1000ms;
-  z-index: 1000;
-  input[type="checkbox"] {
-    appearance: none;
-    --web-appearance: none;
-  }
-  label {
-    display: none;
-  }
-  .nav__logo {
-    img {
-      min-width: 3rem;
-      max-width: none;
-    }
-  }
-  .nav__mobile-link {
-    width: 100%;
+
+  // max-height: 120px;
+  // z-index: 1000;
+  width: 100vh;
+  // transition: 1000ms transform ease-in;
+  // transform: translateY(-100%);
+
+  .container-nav {
+    padding-inline: 9vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    .nav__link {
+    align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    input[type="checkbox"] {
+      appearance: none;
+      --web-appearance: none;
+    }
+    label {
+      display: none;
+    }
+    .nav__logo {
+      img {
+        min-width: 3rem;
+        max-width: none;
+      }
+    }
+    .nav__mobile-link {
+      width: 100%;
       display: flex;
-      list-style: none;
-      gap: 1.2rem;
-      a:hover {
-        color: var(--primary-clr-yellow);
+      align-items: center;
+      justify-content: space-between;
+      .nav__link {
+        display: flex;
+        list-style: none;
+        gap: 1.2rem;
+        a:hover {
+          color: var(--primary-clr-yellow);
+        }
       }
     }
   }
@@ -38,46 +50,53 @@ nav {
 
 @media screen and (max-width: 767px) {
   nav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    input[type="checkbox"]:checked ~ .nav__mobile-link {
-      left: 0;
-    }
+    .container-nav {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      input[type="checkbox"]:checked ~ .nav__mobile-link {
+        left: 0;
+      }
 
-    label {
-      display: block;
-    }
-    .nav__logo {
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-    }
-    .nav__mobile-link {
-      font-size: 1.2em;
-      position: absolute;
-      left: -100%;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 2em;
-      top: 3rem;
-      width: 100%;
-      height: 100vh;
-      background-color: var(--primary-clr-navy);
-      transition: 0.5s;
-      z-index: 3;
-      padding: 2rem;
-      .nav__link {
+      label {
+        display: block;
+      }
+      .nav__logo {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+      .nav__mobile-link {
+        font-size: 1.2em;
+        position: absolute;
+        left: -100%;
         flex-direction: column;
-        gap: 1.5em;
-        padding: 0;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2em;
+        top: 3rem;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-clr-navy);
+        transition: 0.5s;
+        z-index: 3;
+        padding: 2rem;
+        .nav__link {
+          flex-direction: column;
+          gap: 1.5em;
+          padding: 0;
+        }
       }
     }
   }
 }
 
-nav.visiable {
-  position: sticky;
-  width: 100%;
+.sticky {
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  // transform: translateY(0);
+
+  z-index: 1000; /* Assurez-vous que la navbar est au-dessus des autres éléments */
 }

@@ -5,91 +5,98 @@ footer {
 }
 
 .footer__container1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  min-width: 100%;
-  color: white;
-  background-color: #495567;
-  padding-inline: 9vw;
   background-image: url("../assets/footer-background.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-
-  h2 {
-    margin-top: 5.5rem;
-    text-align: center;
-    letter-spacing: -2.3px;
-  }
-
-  .flex-logos-appstore {
+  min-width: 100%;
+  color: white;
+  background-color: #495567;
+  .container-inside-footer1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 270px;
-    margin-bottom: 5.5rem;
-  }
-
-  .logo-appstore {
-    display: flex;
-    align-content: center;
-    color: #495567;
-    font-weight: 600;
-    background-color: #e5ecf4;
-    border-radius: 5px;
-    gap: 1rem;
-    padding-inline: 0.7rem;
-    padding-block: 0.3rem;
-
-    p {
-      font-size: 6.5px;
-      line-height: 12px;
-      font-family: "Space Mono", monospace;
-      span {
-        font-size: 13.06px;
-        line-height: 15px;
-        font-family: "Space Mono", monospace;
-      }
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1440px;
+    padding-inline: 9vw;
+    margin-inline: auto;
+    h2 {
+      margin-top: 5.5rem;
+      text-align: center;
+      letter-spacing: -2.3px;
     }
-    img {
+
+    .flex-logos-appstore {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 270px;
+      margin-bottom: 5.5rem;
+    }
+
+    .logo-appstore {
+      display: flex;
+      align-content: center;
       color: #495567;
+      font-weight: 600;
+      background-color: #e5ecf4;
+      border-radius: 5px;
+      gap: 1rem;
+      padding-inline: 0.7rem;
+      padding-block: 0.3rem;
+
+      p {
+        font-size: 6.5px;
+        line-height: 12px;
+        font-family: "Space Mono", monospace;
+        span {
+          font-size: 13.06px;
+          line-height: 15px;
+          font-family: "Space Mono", monospace;
+        }
+      }
+      img {
+        color: #495567;
+      }
     }
   }
 }
 
 .footer__container2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #333a44;
-  padding-inline: 9vw;
   min-width: 100%;
-  gap: 3rem;
-  color: white;
-
-  .scoot-logo {
-    margin-top: 76px;
-  }
-
-  .links {
+  background-color: #333a44;
+  .container-inside-footer2 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    margin: auto;
-    margin-bottom: 3rem;
+    flex-direction: column;
+    max-width: 1440px;
+    padding-inline: 9vw;
+    margin-inline: auto;
+    gap: 3rem;
+    color: white;
 
-    a {
-      color: #939caa;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 25px;
+    .scoot-logo {
+      margin-top: 76px;
     }
-    a:hover{
-      color: var(--primary-clr-yellow)
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin: auto;
+      margin-bottom: 3rem;
+
+      a {
+        color: #939caa;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+      }
+      a:hover {
+        color: var(--primary-clr-yellow);
+      }
     }
   }
 
@@ -100,65 +107,69 @@ footer {
     width: 120px;
     margin-bottom: 76px;
 
-    img{
-      filter: invert(71%) sepia(48%) saturate(733%) hue-rotate(347deg) brightness(103%) contrast(98%);
+    img {
+      filter: invert(71%) sepia(48%) saturate(733%) hue-rotate(347deg)
+        brightness(103%) contrast(98%);
     }
 
-    img:hover{
-      filter: invert(96%) sepia(2%) saturate(1058%) hue-rotate(176deg) brightness(98%) contrast(95%);
+    img:hover {
+      filter: invert(96%) sepia(2%) saturate(1058%) hue-rotate(176deg)
+        brightness(98%) contrast(95%);
     }
-    
   }
 }
 @media (min-width: 768px) {
   .footer__container2 {
-    flex-direction: row;
-    padding-block: 2rem;
-    gap: 0rem;
-
-    .scoot-logo {
-      margin-top: 0px;
-      // min-width: 3rem;
-      img {
-        min-width: 3rem;
-      }
-    }
-
-    .social-medias-logos {
-      margin-bottom: 0px;
-
-    }
-
-    .links {
+    .container-inside-footer2 {
       flex-direction: row;
-      margin-bottom: 0rem;
-      margin-left: 2rem;
+      padding-block: 2rem;
+      gap: 0rem;
+
+      .scoot-logo {
+        margin-top: 0px;
+        // min-width: 3rem;
+        img {
+          min-width: 3rem;
+        }
+      }
+
+      .social-medias-logos {
+        margin-bottom: 0px;
+      }
+
+      .links {
+        flex-direction: row;
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+      }
     }
   }
 }
 
 @media (min-width: 1440px) {
   .footer__container1 {
-    flex-direction: row;
-    justify-content: space-between;
+    .container-inside-footer1 {
+      flex-direction: row;
+      justify-content: space-between;
 
-    h2 {
-      margin-block: 2rem;
-      text-align: left;
-    }
+      h2 {
+        margin-block: 2rem;
+        text-align: left;
+      }
 
-    .logo-appstore {
-      margin-block: 5rem;
-      margin-bottom: 0rem;
+      .logo-appstore {
+        margin-block: 5rem;
+        margin-bottom: 0rem;
+      }
     }
   }
 }
 
-@media (min-width:2500px){
-  .footer__container1{
+@media (min-width: 2500px) {
+  .footer__container1 {
     padding-inline: 9%;
   }
-  .footer__container2{
-    padding-inline:9%;
+  .footer__container2 {
+    padding-inline: 9%;
   }
 }
