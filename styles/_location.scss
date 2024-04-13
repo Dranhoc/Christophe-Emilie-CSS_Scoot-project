@@ -28,8 +28,13 @@
   }
 
   h3 {
+    display: flex;
+    align-items: center;
     margin-top: 3rem;
-    // margin-inline: 37vw;
+    width:200px;
+    height: 96px;
+    margin-inline: auto;
+    
   }
 
   p {
@@ -74,7 +79,9 @@
 
     .location__messageUs__container {
       h3 {
-        margin-inline: 30vw;
+        width:303px;
+        height: 96px;
+        margin-top: 0;
       }
 
       p {
@@ -117,6 +124,7 @@
         margin-inline: 0vw;
         text-align: left;
         min-width: 18rem;
+        
       }
 
       p {
