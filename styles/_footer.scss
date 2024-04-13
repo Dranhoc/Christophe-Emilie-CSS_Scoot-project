@@ -11,6 +11,7 @@ footer {
   min-width: 100%;
   color: white;
   background-color: #495567;
+
   .container-inside-footer1 {
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@ footer {
     max-width: 1440px;
     padding-inline: 9vw;
     margin-inline: auto;
+
     h2 {
       margin-top: 5.5rem;
       text-align: center;
@@ -48,12 +50,14 @@ footer {
         font-size: 6.5px;
         line-height: 12px;
         font-family: "Space Mono", monospace;
+
         span {
           font-size: 13.06px;
           line-height: 15px;
           font-family: "Space Mono", monospace;
         }
       }
+
       img {
         color: #495567;
       }
@@ -64,6 +68,7 @@ footer {
 .footer__container2 {
   min-width: 100%;
   background-color: #333a44;
+
   .container-inside-footer2 {
     display: flex;
     align-items: center;
@@ -94,6 +99,7 @@ footer {
         font-weight: 700;
         line-height: 25px;
       }
+
       a:hover {
         color: var(--primary-clr-yellow);
       }
@@ -118,6 +124,7 @@ footer {
     }
   }
 }
+
 @media (min-width: 768px) {
   .footer__container2 {
     .container-inside-footer2 {
@@ -127,7 +134,7 @@ footer {
 
       .scoot-logo {
         margin-top: 0px;
-        // min-width: 3rem;
+
         img {
           min-width: 3rem;
         }
@@ -167,11 +174,14 @@ footer {
 
 @media (min-width: 2500px) {
   .footer__container1 {
+
     .container-inside-footer1 {
       padding-inline: 2vw;
     }
   }
+
   .footer__container2 {
+    
     .container-inside-footer2 {
       padding-inline: 2vw;
     }

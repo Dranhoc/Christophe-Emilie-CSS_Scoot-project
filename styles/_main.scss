@@ -17,14 +17,15 @@ body {
   font-weight: 400;
   line-height: 25px;
   color: var(--primary-clr-navy);
-
   margin-inline: auto;
 }
+
 .wrapper {
   max-width: 100vw;
   margin-inline: auto;
   overflow-x: hidden;
 }
+
 .container {
   padding-inline: 9vw;
   max-width: 1440px;
@@ -56,6 +57,7 @@ h1 {
   line-height: 56px;
   letter-spacing: -2.5px;
 }
+
 h2 {
   font-family: var(--ff-space);
   font-size: 48px;
@@ -63,6 +65,7 @@ h2 {
   line-height: 48px;
   letter-spacing: -2.14px;
 }
+
 h3 {
   font-family: var(--ff-space);
   font-size: 40px;
@@ -70,6 +73,7 @@ h3 {
   line-height: 48px;
   letter-spacing: -1.79px;
 }
+
 h4 {
   font-family: var(--ff-space);
   font-size: 24px;
@@ -77,6 +81,7 @@ h4 {
   line-height: 28px;
   letter-spacing: -1.07px;
 }
+
 a {
   text-decoration: none;
   color: var(--secondary-clr-dimgrey);
@@ -85,6 +90,7 @@ a {
   font-size: 15px;
   line-height: 25px;
 }
+
 @media screen and (max-width: 767px) {
   body {
     font-size: 15px;
@@ -110,6 +116,7 @@ a {
 
 @media (min-width: 2500px) {
   .wrapper {
+    
     .container {
       padding-inline: 2vw;
     }
