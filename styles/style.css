@@ -1275,6 +1275,8 @@ header .header__text h1 {
 .location__container .map {
   margin-inline: auto;
   margin-block: 10%;
+  height: 152px;
+  width: 311px;
   background: url("../assets/img-location/map-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1292,11 +1294,11 @@ header .header__text h1 {
   padding-block: 20px;
 }
 .location__container h3 {
-  margin-top: 5vh;
+  margin-top: 3rem;
 }
 .location__container p {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   margin-inline: 3vw;
 }
 .location__container .location__messageUs__container {
