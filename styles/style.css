@@ -253,6 +253,9 @@ nav .container-nav .nav__mobile-link .nav__link a:hover {
   nav .container-nav input[type=checkbox]:checked ~ .nav__mobile-link {
     left: 0;
   }
+  nav .container-nav .nav__btn {
+    margin-bottom: 7rem;
+  }
   nav .container-nav label {
     display: block;
   }
