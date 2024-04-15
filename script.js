@@ -36,3 +36,25 @@ window.addEventListener("scroll", function () {
     }
     lastScrollTop = scrollTop;
 });
+
+document.getElementById('hamburger-img').addEventListener('click', function () {
+    var image = document.getElementById('hamburger-img');
+    if (image.src.match("hamburger.svg")) {
+        image.src = "../assets/cross.svg";
+    } else {
+        image.src = "../assets/hamburger.svg";
+    }
+});
+
+window.addEventListener('click', function () {
+    let blackDiv = document.getElementById('black-menu');
+    let hamburger = document.getElementById('hamburger');
+    var image = document.getElementById('hamburger-img');
+    //si "black-div" est cliquée, input hamburger checked = false
+    blackDiv.addEventListener('click', function () {
+        hamburger.checked = false;
+        image.src = "../assets/hamburger.svg";
+    });
+}
+);
+
